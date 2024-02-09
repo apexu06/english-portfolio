@@ -5,7 +5,7 @@
 <h1>Tasks</h1>
 
 {#each data.posts as task}
-	<p>{task.meta.title}</p>
-	<p>{task.meta.date}</p>
+	<p>{task.metadata.title}</p>
+	<p>{task.metadata.date}</p>
 	<a href={task.path}>Read more</a>
 {/each}

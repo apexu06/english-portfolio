@@ -5,6 +5,6 @@ export type Metadata = {
 };
 
 export type Post = {
-	meta: Metadata;
+	metadata: Metadata;
 	path: string;
 };

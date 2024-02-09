@@ -1,7 +1,9 @@
-import { json } from '@sveltejs/kit';
-import { fetchMarkDownPosts } from './posts';
+import { json, type RequestHandler } from '@sveltejs/kit';
+import { fetchMarkDownPosts } from '$lib/utils/posts';
 
-export const GET = async () => {
-	const posts = await fetchMarkDownPosts();
+export const GET: RequestHandler = async ({ url }) => {
+	let category = url.searchParams.get('category');
+
+	const posts = await fetchMarkDownPosts(category);
 	return json(posts);
 };

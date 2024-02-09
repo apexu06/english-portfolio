@@ -3,7 +3,7 @@
 </script>
 
 <article>
-	<h1>{data.title}</h1>
+	<h3>{data.title}</h3>
 	<p>Published: {data.date}</p>
 	<svelte:component this={data.content} />
 </article>
