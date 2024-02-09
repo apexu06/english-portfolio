@@ -5,8 +5,8 @@
 
 <button on:click={toggleMode}>
 	{#if $mode === 'dark'}
-		<SunIcon class="h-8 w-8" />
+		<SunIcon class="h-7 w-7" />
 	{:else}
-		<MoonIcon class="h-8 w-8" />
+		<MoonIcon class="h-7 w-7" />
 	{/if}
 </button>

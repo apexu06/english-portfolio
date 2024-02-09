@@ -26,13 +26,13 @@
 	}
 
 	:root {
-		--accent: #5557EE;
+		--accent: #5557ee;
 		--background: #f5f5f5;
-		--foreground: #222;
+		--foreground: @apply text-red-300;
 	}
 
 	.dark {
-		--accent: #5557EE;
+		--accent: #5557ee;
 		--background: #222;
 		--foreground: #f5f5f5;
 	}

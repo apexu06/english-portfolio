@@ -8,7 +8,7 @@
 	<div class="flex gap-4">
 		<ModeToggle />
 		<a href="https://github.com/apexu06/english-portfolio">
-			<Github class="h-8 w-8"></Github>
+			<Github class="h-7 w-7"></Github>
 		</a>
 	</div>
 </nav>

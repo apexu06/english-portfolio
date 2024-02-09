@@ -13,16 +13,18 @@
 			<h1 transition:fly={{ y: 200 }} class="text-[80px]">My Portfolio</h1>
 			<h3 transition:fly={{ y: 200, delay: 200 }} class="font-normal">by Jakob Zelger</h3>
 			<button
-				class="group flex w-fit items-center self-end p-4 text-xl text-foreground transition"
+				class="group flex w-fit self-end p-4 text-xl text-foreground transition"
 				transition:fly={{ x: 200, delay: 400 }}
 			>
 				<div class="flex items-center transition">
-					<ChevronRight class="mr-[-8px] transition group-hover:-translate-x-4"></ChevronRight>
-					<ChevronRight class="mr-[-8px] transition  group-hover:-translate-x-4"></ChevronRight>
-					<ChevronRight class="mr-3 transition  group-hover:-translate-x-4"></ChevronRight>
+					<ChevronRight class="mr-[-8px] transition delay-150 group-hover:translate-x-4"
+					></ChevronRight>
+					<ChevronRight class="mr-[-8px] transition delay-75 group-hover:translate-x-4"
+					></ChevronRight>
+					<ChevronRight class="delay mr-3 transition group-hover:translate-x-4"></ChevronRight>
 				</div>
 
-				<span class="transition">Get Started</span>
+				<span class="text-[20px] font-bold">Get Started</span>
 			</button>
 		</div>
 	{/if}
@@ -37,4 +39,3 @@
 		background: linear-gradient(90deg, rgba(169, 0, 222, 1) 0%, rgba(0, 174, 255, 1) 100%);
 	}
 </style>
-
