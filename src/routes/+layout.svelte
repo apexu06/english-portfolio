@@ -2,7 +2,7 @@
 	import NavBar from '$lib/navbar/NavBar.svelte';
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 
 	export let data;
 </script>
@@ -14,8 +14,8 @@
 	</div>
 	{#key data.currentRoute}
 		<main
-			in:fade={{ duration: 100, delay: 100 }}
-			out:fade={{ duration: 100 }}
+			in:fly={{ x: 200, duration: 150, delay: 100 }}
+			out:fly={{ x: -200, duration: 150 }}
 			class="h-[calc(100vh-5rem)]"
 		>
 			<slot />
