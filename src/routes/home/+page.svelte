@@ -8,6 +8,10 @@
 	onMount(() => (loaded = true));
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 <div class="flex h-full w-full flex-col items-center justify-center">
 	<div class="flex h-1/2 w-1/2 flex-col justify-between">
 		{#if loaded}
@@ -29,7 +33,7 @@
 					class="group flex w-fit self-end text-xl transition"
 					transition:fly={{ x: 200, delay: 400 }}
 					on:click={() => {
-						goto('/portfolio/overview');
+						goto('/portfolio/tasks');
 					}}
 				>
 					<div class="flex items-center transition">
