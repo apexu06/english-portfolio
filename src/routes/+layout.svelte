@@ -6,7 +6,9 @@
 
 <ModeWatcher />
 <div class="h-screen w-screen">
-	<NavBar />
+	<div class="h-20">
+		<NavBar />
+	</div>
 	<div class="h-[calc(100vh-5rem)]">
 		<slot />
 	</div>
