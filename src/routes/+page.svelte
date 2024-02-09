@@ -1,4 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p class="bg-red-400">
-	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<script>
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+	
+
+	onMount(() => {
+		goto('/home');
+	});
+</script>
+
