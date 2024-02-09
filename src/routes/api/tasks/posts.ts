@@ -10,7 +10,7 @@ export const fetchMarkDownPosts = async () => {
 	const allPosts = await Promise.all(
 		posts.map(async ([slug, post]) => {
 			const { metadata } = await post();
-			const path = slug.slice(11);
+			const path = slug.slice(11).substring(0, slug.length - 14);
 			return {
 				meta: metadata,
 				path,
