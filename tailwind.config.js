@@ -6,9 +6,13 @@ export default {
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
-				accent: 'var(--accent)'
-			}
-		}
+				navBackground: 'var(--navBackground)',
+				accent: 'var(--accent)',
+			},
+			boxShadow: {
+				default: '0px 0px 20px 0px rgba(0, 0, 0, 0.15)',
+			},
+		},
 	},
-	plugins: []
+	plugins: [],
 };

@@ -27,14 +27,16 @@
 
 	:root {
 		--accent: #5557ee;
-		--background: #f5f5f5;
-		--foreground: @apply text-red-300;
+		--background: #f9fafc;
+		--navBackground: #fff;
+		--foreground: #222;
 	}
 
 	.dark {
 		--accent: #5557ee;
 		--background: #222;
-		--foreground: #f5f5f5;
+		--navBackground: #242424;
+		--foreground: #f9fafc;
 	}
 }
 
@@ -45,5 +47,11 @@
 
 	* {
 		font-family: 'Atkinson Hyperlegible', sans-serif;
+	}
+
+	.gradientText {
+		background: linear-gradient(90deg, #8b5cf6, #ec4899);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }
