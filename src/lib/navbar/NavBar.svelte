@@ -12,7 +12,6 @@
 	let currentPageName = '';
 	$: $page,
 		(() => {
-			//console.log($page.url.pathname);
 			let pageUrlParts = $page.url.pathname.split('/');
 			currentPageName = pageUrlParts[pageUrlParts.length - 1];
 		})();
@@ -20,7 +19,7 @@
 
 {#if loaded}
 	<nav
-		class="flex h-full w-screen items-center justify-between bg-navBackground px-8 text-foreground shadow-default"
+		class="flex h-full w-screen items-center justify-between bg-lightBackground px-8 text-foreground shadow-default"
 	>
 		<button on:click={() => goto('/home')} transition:fly={{ x: -200, duration: 400 }}>
 			<h2 class="text-[30px]">

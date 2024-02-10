@@ -50,6 +50,3 @@
 		{/if}
 	</div>
 </div>
-
-<style>
-</style>

@@ -23,16 +23,16 @@
 	}
 
 	:root {
-		--accent: #5557ee;
+		--accent: #8c5cf5;
 		--background: #f9fafc;
-		--navBackground: #fff;
+		--lightBackground: #fff;
 		--foreground: #222;
 	}
 
 	.dark {
-		--accent: #5557ee;
+		--accent: #cf4eb5;
 		--background: #222;
-		--navBackground: #262626;
+		--lightBackground: #262626;
 		--foreground: #f9fafc;
 	}
 }

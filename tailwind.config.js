@@ -6,11 +6,11 @@ export default {
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
-				navBackground: 'var(--navBackground)',
+				lightBackground: 'var(--lightBackground)',
 				accent: 'var(--accent)',
 			},
 			boxShadow: {
-				default: '0px 0px 20px 0px rgba(0, 0, 0, 0.15)',
+				default: '5px 5px 5px 0px rgba(0, 0, 0, 0.1)',
 			},
 		},
 	},
