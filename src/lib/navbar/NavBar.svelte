@@ -12,6 +12,7 @@
 	let currentPageName = '';
 	$: $page,
 		(() => {
+			//console.log($page.url.pathname);
 			let pageUrlParts = $page.url.pathname.split('/');
 			currentPageName = pageUrlParts[pageUrlParts.length - 1];
 		})();

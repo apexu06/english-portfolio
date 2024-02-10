@@ -1,7 +1,7 @@
 import type { Metadata, Post } from '$lib/types/post';
 
 export const fetchMarkDownPosts = async (category: string | null) => {
-	const allPostFiles = import.meta.glob('/src/routes/portfolio/tasks/*.md') as Record<
+	const allPostFiles = import.meta.glob('$markdown/*.md') as Record<
 		string,
 		() => Promise<{ metadata: Metadata }>
 	>;
@@ -10,8 +10,12 @@ export const fetchMarkDownPosts = async (category: string | null) => {
 	const allPosts = await Promise.all(
 		posts.map(async ([slug, post]) => {
 			const { metadata } = await post();
-
-			const path = slug.slice(11).substring(0, slug.length - 14);
+			const path =
+				'/portfolio/posts/' +
+				slug
+					.split('/')
+					.pop()
+					?.substring(0, slug.length - 17);
 			return {
 				metadata: metadata,
 				path,
@@ -30,7 +34,7 @@ export const fetchMarkDownPosts = async (category: string | null) => {
 };
 
 export const fetchAllCategories = async () => {
-	const allPostFiles = import.meta.glob('/src/routes/portfolio/tasks/*.md') as Record<
+	const allPostFiles = import.meta.glob('$markdown/*.md') as Record<
 		string,
 		() => Promise<{ metadata: Metadata }>
 	>;

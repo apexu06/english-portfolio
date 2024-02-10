@@ -33,7 +33,7 @@
 					class="group flex w-fit self-end text-xl transition"
 					transition:fly={{ x: 200, delay: 400 }}
 					on:click={() => {
-						goto('/portfolio/tasks/categories');
+						goto('/portfolio/posts/categories');
 					}}
 				>
 					<div class="flex items-center transition">
