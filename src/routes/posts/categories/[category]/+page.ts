@@ -3,7 +3,7 @@ import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	const { category } = params;
-	const response = await fetch(`/api/tasks?category=${category}`);
+	const response = await fetch(`/api/posts?category=${category}`);
 	const posts: Post[] = await response.json();
 
 	return {

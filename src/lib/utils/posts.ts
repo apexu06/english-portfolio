@@ -11,7 +11,7 @@ export const fetchMarkDownPosts = async (category: string | null) => {
 		posts.map(async ([slug, post]) => {
 			const { metadata } = await post();
 			const path =
-				'/portfolio/posts/' +
+				'/posts/' +
 				slug
 					.split('/')
 					.pop()
