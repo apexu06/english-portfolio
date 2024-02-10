@@ -17,7 +17,8 @@
 		@apply text-2xl font-bold;
 	}
 
-	span {
+	span,
+	a {
 		@apply text-xl;
 	}
 
@@ -31,7 +32,7 @@
 	.dark {
 		--accent: #5557ee;
 		--background: #222;
-		--navBackground: #242424;
+		--navBackground: #262626;
 		--foreground: #f9fafc;
 	}
 }

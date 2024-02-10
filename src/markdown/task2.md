@@ -1,7 +1,7 @@
 ---
 title: '2nd test correction'
 date: '09.02.2024'
-categories: ['correction', 'test']
+categories: ['correction', 'america']
 ---
 
 ### this page will display correction of the following tests:

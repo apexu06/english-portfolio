@@ -48,8 +48,11 @@ export const fetchAllCategories = async () => {
 		}),
 	);
 
-	const categories = allPostCategories.flat();
-	const uniqueCategories = [...new Set(categories)];
+	const counts: Map<string, number> = new Map();
 
-	return uniqueCategories;
+	allPostCategories.flat().forEach((item) => {
+		counts.set(item, (counts.get(item) || 0) + 1);
+	});
+
+	return Array.from(counts.entries()).map(([name, count]) => ({ name, count }));
 };
