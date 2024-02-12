@@ -9,6 +9,13 @@ export type Post = {
 	path: string;
 };
 
+export type Comment = {
+	id: string;
+	createdAt: Date;
+	content: string;
+	postName: string;
+};
+
 export type LocalStorageProps = {
 	categorySort: 'name' | 'count';
 };

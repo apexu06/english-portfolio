@@ -17,8 +17,8 @@
 		@apply text-2xl font-bold;
 	}
 
-	span,
-	a {
+	a,
+	span {
 		@apply text-xl;
 	}
 
@@ -39,7 +39,7 @@
 
 @layer base {
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-xl text-foreground;
 	}
 
 	* {

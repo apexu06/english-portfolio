@@ -21,23 +21,26 @@
 </script>
 
 {#if isLoaded}
-	<div
-		class="flex h-full w-2/3 flex-col items-center gap-4"
-		transition:fly={{ x: 200, duration: 200, delay: 400 }}
-	>
+	<div class="flex h-full w-2/3 flex-col items-center gap-4">
 		<h1 transition:fly={{ y: -100, duration: 200, delay: 300 }} class="gradientText h-16">
 			Categories
 		</h1>
-		<div class="flex w-[98%] items-center justify-between pl-1">
+		<div
+			class="flex w-[98%] items-center justify-between pl-1"
+			transition:fly={{ x: -100, duration: 200, delay: 400 }}
+		>
 			<span><b>Sort by:</b> </span>
 			<CategorySortButtons />
 		</div>
-		<div class="flex h-3/4 w-full flex-col items-center gap-3 overflow-y-scroll">
+		<div
+			class="flex h-3/4 w-full flex-col items-center gap-3 overflow-y-scroll"
+			transition:fly={{ x: 200, duration: 200, delay: 500 }}
+		>
 			{#each data.categories as category (category.name)}
 				<button
 					animate:flip={{ duration: 250 }}
 					on:click={() => goto('/posts/categories/' + category.name)}
-					class="flex h-20 min-h-20 w-[98%] items-center justify-between bg-lightBackground px-8 shadow-default transition hover:bg-foreground hover:text-lightBackground"
+					class="flex h-20 min-h-20 min-w-[98%] items-center justify-between bg-lightBackground px-8 shadow-default transition hover:bg-foreground hover:text-lightBackground"
 				>
 					<span>{category.name}</span>
 					<span>{`${category.count} ${category.count === 1 ? 'Post' : 'Posts'}`}</span>
