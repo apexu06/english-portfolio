@@ -38,10 +38,6 @@
 }
 
 @layer base {
-	body {
-		@apply bg-background text-xl text-foreground;
-	}
-
 	* {
 		font-family: 'Atkinson Hyperlegible', sans-serif;
 	}
