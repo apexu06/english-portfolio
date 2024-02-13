@@ -7,11 +7,11 @@
 	import { fly } from 'svelte/transition';
 
 	export let data;
-	$: $pageInfo.categorySort,
+	$: $pageInfo.categorySortOrder,
 		(() => {
-			if ($pageInfo.categorySort === 'count' && data.categories) {
+			if ($pageInfo.categorySortOrder === 'count' && data.categories) {
 				data.categories.sort((a, b) => b.count - a.count);
-			} else if ($pageInfo.categorySort === 'name' && data.categories) {
+			} else if ($pageInfo.categorySortOrder === 'name' && data.categories) {
 				data.categories.sort((a, b) => a.name.localeCompare(b.name));
 			}
 		})();
@@ -21,13 +21,8 @@
 </script>
 
 {#if isLoaded}
-	<div class="flex h-full w-full flex-col items-center gap-4 lg:w-2/3">
-		<h1
-			transition:fly={{ y: -100, duration: 200, delay: 300 }}
-			class="gradientText h-[70px] text-[60px]"
-		>
-			Categories
-		</h1>
+	<div class="flex h-full w-full flex-col items-center gap-4 md:w-2/3">
+		<h1 transition:fly={{ y: -100, duration: 200, delay: 300 }} class="font-normal">Categories</h1>
 		<div
 			class="flex w-[98%] items-center justify-between pl-1"
 			transition:fly={{ x: -100, duration: 200, delay: 400 }}
@@ -36,7 +31,7 @@
 			<CategorySortButtons />
 		</div>
 		<div
-			class="flex h-3/4 w-full flex-col items-center gap-3 overflow-y-scroll"
+			class="flex h-3/4 w-full flex-col items-center gap-3 overflow-y-auto"
 			transition:fly={{ x: 200, duration: 200, delay: 500 }}
 		>
 			{#each data.categories as category (category.name)}
@@ -50,5 +45,11 @@
 				</button>
 			{/each}
 		</div>
+
+		<a
+			transition:fly={{ y: 100, duration: 200, delay: 600 }}
+			href={'/posts'}
+			class="text-gray-500 hover:text-foreground hover:underline">view all posts</a
+		>
 	</div>
 {/if}

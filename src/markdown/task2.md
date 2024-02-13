@@ -1,7 +1,8 @@
 ---
 title: '2nd test correction'
 date: '09.02.2024'
-categories: ['correction', 'america']
+categories: ['correction']
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ---
 
 - 1st Test

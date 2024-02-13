@@ -3,7 +3,7 @@ import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params, fetch }) => {
 	const post = await import(`../../../markdown/${params.slug}.md`);
-	const { title, date, categories } = post.metadata;
+	const { title, date, description, categories } = post.metadata;
 
 	const response = await fetch(`/api/comments?postName=${title}`);
 	const comments = (await response.json()) as Comment[];
@@ -15,6 +15,7 @@ export const load: PageLoad = async ({ params, fetch }) => {
 		title,
 		date,
 		categories,
+		description,
 		comments,
 	};
 };

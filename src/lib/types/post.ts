@@ -1,6 +1,7 @@
 export type Metadata = {
 	title: string;
 	date: string;
+	description: string;
 	categories: string[];
 };
 
@@ -17,5 +18,5 @@ export type Comment = {
 };
 
 export type LocalStorageProps = {
-	categorySort: 'name' | 'count';
+	categorySortOrder: 'name' | 'count';
 };

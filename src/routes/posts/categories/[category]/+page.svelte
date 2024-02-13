@@ -1,11 +1,7 @@
-<script>
+<script lang="ts">
+	import PostGrid from '$lib/post/PostGrid.svelte';
+
 	export let data;
 </script>
 
-<div>
-	{#each data.posts as post}
-		<h2>{post.metadata.title}</h2>
-		<p>{post.metadata.date}</p>
-		<a href={post.path}>Read more</a>
-	{/each}
-</div>
+<PostGrid posts={data.posts} category={data.category} />
