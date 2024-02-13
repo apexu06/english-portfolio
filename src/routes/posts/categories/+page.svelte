@@ -21,7 +21,7 @@
 </script>
 
 {#if isLoaded}
-	<div class="flex h-full w-2/3 flex-col items-center gap-4">
+	<div class="flex h-full w-full flex-col items-center gap-4 lg:w-2/3">
 		<h1
 			transition:fly={{ y: -100, duration: 200, delay: 300 }}
 			class="gradientText h-[70px] text-[60px]"
