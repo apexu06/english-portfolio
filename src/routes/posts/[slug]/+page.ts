@@ -1,4 +1,4 @@
-import prisma from '$lib/utils/prisma';
+import type { Comment } from '@prisma/client';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params, fetch }) => {

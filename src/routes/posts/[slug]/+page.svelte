@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<article class="prose prose-neutral prose-xl max-w-none">
+<article class="prose prose-xl max-w-none dark:prose-invert">
 	<div class="not-prose">
 		<h1>{data.title}</h1>
 		<p>{data.date}</p>
