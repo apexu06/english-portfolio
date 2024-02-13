@@ -22,9 +22,9 @@
 		class="flex h-full w-screen items-center justify-between bg-lightBackground px-8 text-foreground shadow-default"
 	>
 		<button on:click={() => goto('/home')} transition:fly={{ x: -200, duration: 400 }}>
-			<h2 class="text-[30px]">
+			<h3 class="">
 				{currentPageName.charAt(0).toUpperCase() + currentPageName.slice(1)}
-			</h2>
+			</h3>
 		</button>
 		<div class="flex gap-4" transition:fly={{ x: 200, duration: 400 }}>
 			<ModeToggle />

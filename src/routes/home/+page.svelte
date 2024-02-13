@@ -16,7 +16,7 @@
 	<div class="flex h-1/2 w-1/2 flex-col justify-between">
 		{#if loaded}
 			<div class="flex flex-col gap-4">
-				<h1 transition:fly={{ y: -300 }} class="gradientText text-[80px]">My Portfolio</h1>
+				<h1 transition:fly={{ y: -300 }} class="gradientText h-[90px] text-[80px]">My Portfolio</h1>
 				<h3 transition:fly={{ y: 200, delay: 200 }} class="font-normal">
 					by <b>Jakob Zelger</b>
 				</h3>

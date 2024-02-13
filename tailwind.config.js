@@ -3,6 +3,10 @@ export default {
 	darkMode: ['class'],
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		fontFamily: {
+			playfair: ['"Playfair Display"', 'serif'],
+			atkinson: ['"Atkinson Hyperlegible"', 'serif'],
+		},
 		extend: {
 			colors: {
 				background: 'var(--background)',

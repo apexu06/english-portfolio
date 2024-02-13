@@ -1,7 +1,7 @@
 import type { Post } from '$lib/types/post';
-import type { PageLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
-export const load: PageLoad = async ({ fetch, params }) => {
+export const load: PageServerLoad = async ({ fetch, params }) => {
 	const { category } = params;
 	const response = await fetch(`/api/posts?category=${category}`);
 	const posts: Post[] = await response.json();

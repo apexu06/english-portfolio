@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
 	h1 {
-		@apply text-6xl font-bold;
+		@apply font-playfair text-6xl font-bold;
 	}
 
 	h2 {
@@ -26,18 +24,22 @@
 		--accent: #8c5cf5;
 		--background: #f9fafc;
 		--lightBackground: #fff;
-		--foreground: #222;
+		--foreground: #1c1b22;
 	}
 
 	.dark {
 		--accent: #cf4eb5;
-		--background: #222;
-		--lightBackground: #262626;
+		--background: #1c1b22;
+		--lightBackground: #282630;
 		--foreground: #f9fafc;
 	}
 }
 
 @layer base {
+	body {
+		@apply bg-background text-xl text-foreground;
+	}
+
 	* {
 		font-family: 'Atkinson Hyperlegible', sans-serif;
 	}

@@ -2,9 +2,9 @@
 	export let data;
 </script>
 
-<article class="prose prose-xl max-w-none dark:prose-invert">
+<article class="prose prose-xl prose-neutral max-w-none dark:prose-invert">
 	<div class="not-prose">
-		<h1>{data.title}</h1>
+		<h1 class="font-playfair">{data.title}</h1>
 		<p>{data.date}</p>
 	</div>
 	<svelte:component this={data.content} />
