@@ -12,6 +12,7 @@ const config = {
 		alias: {
 			$markdown: './src/markdown',
 		},
+		paths: {},
 	},
 };
 

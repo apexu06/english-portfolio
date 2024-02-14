@@ -13,30 +13,35 @@
 </svelte:head>
 
 <div class="flex h-full w-full flex-col items-center justify-center">
-	<div class="flex h-1/2 w-1/2 flex-col justify-between">
+	<div class="flex h-1/2 w-full flex-col justify-between sm:w-1/2">
 		{#if loaded}
-			<div class="flex flex-col gap-4">
-				<h1 transition:fly={{ y: -300 }} class="gradientText h-[90px] text-[80px]">My Portfolio</h1>
+			<div class="flex flex-col items-center gap-4 sm:items-start">
+				<h1
+					transition:fly={{ y: -300 }}
+					class="gradientText h-[58px] text-5xl sm:h-[90px] sm:text-[80px]"
+				>
+					My Portfolio
+				</h1>
 				<h3 transition:fly={{ y: 200, delay: 200 }} class="font-normal">
 					by <b>Jakob Zelger</b>
 				</h3>
 
 				<div
 					transition:fly={{ x: 200, delay: 300 }}
-					class="h-3 w-72 rounded-full bg-foreground"
+					class="h-2 w-72 rounded-full bg-foreground sm:h-3"
 				></div>
 				<h4 transition:fly={{ x: -200, delay: 100 }} class="font-normal">2023 - 2024</h4>
 			</div>
 
-			<div class="flex justify-end">
+			<div class="mt-16 flex justify-center sm:mt-0 sm:justify-end">
 				<button
-					class="group flex w-fit self-end text-xl transition"
+					class="group flex w-fit self-center text-xl transition"
 					transition:fly={{ x: 200, delay: 400 }}
 					on:click={() => {
 						goto('/posts/categories');
 					}}
 				>
-					<div class="flex items-center transition">
+					<div class="hidden items-center transition sm:flex">
 						<ChevronRight class="mr-[-8px] transition delay-150 group-hover:translate-x-4"
 						></ChevronRight>
 						<ChevronRight class="mr-[-8px] transition delay-75 group-hover:translate-x-4"

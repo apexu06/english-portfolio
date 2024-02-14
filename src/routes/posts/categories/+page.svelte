@@ -22,7 +22,9 @@
 
 {#if isLoaded}
 	<div class="flex h-full w-full flex-col items-center gap-4 md:w-2/3">
-		<h1 transition:fly={{ y: -100, duration: 200, delay: 300 }} class="font-normal">Categories</h1>
+		<h1 transition:fly={{ y: -100, duration: 200, delay: 300 }} class="mb-5 font-normal">
+			Categories
+		</h1>
 		<div
 			class="flex w-[98%] items-center justify-between pl-1"
 			transition:fly={{ x: -100, duration: 200, delay: 400 }}

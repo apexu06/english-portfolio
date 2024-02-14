@@ -5,7 +5,7 @@
 	import { fly } from 'svelte/transition';
 
 	export let posts: Post[];
-	export let category: string | 'All Posts';
+	export let category: string;
 	let loaded: boolean = false;
 
 	onMount(() => {
