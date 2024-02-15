@@ -1,5 +1,23 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, type Comment } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-export default prisma;
+export const getCommentsFromPost = async (postName: string): Promise<Comment[]> => {
+	return await prisma.comment.findMany({ where: { postName: postName } });
+};
+
+export const createNewComment = async (content: string, postName: string): Promise<Comment> => {
+	return await prisma.comment.create({
+		data: {
+			postName: postName,
+			content: content,
+		},
+	});
+};
+
+export const updateComment = async (id: string, content: string): Promise<Comment> => {
+	return await prisma.comment.update({
+		where: { id: id },
+		data: { content: content },
+	});
+};

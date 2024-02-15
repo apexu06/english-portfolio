@@ -6,8 +6,6 @@ description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 layout: blog
 ---
 
-Some hopefully interesting text about america. This is a second line.
-
 # big
 
 ## smaller
