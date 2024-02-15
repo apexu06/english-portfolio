@@ -11,7 +11,7 @@ datasource db {
 model Comment {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
   content   String   @db.VarChar(255)
   postName  String   @db.VarChar(255)
+  updatedAt DateTime @updatedAt
 }
