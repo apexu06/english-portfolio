@@ -1,3 +1,6 @@
+@import '@fontsource-variable/playfair-display';
+@import '@fontsource/atkinson-hyperlegible';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,15 +38,13 @@
 		--foreground: #f9fafc;
 		--shadowColor: rgba(0, 0, 0, 0.2);
 	}
-}
 
-@layer base {
 	body {
 		@apply bg-background text-xl text-foreground;
 	}
 
 	* {
-		font-family: 'Atkinson Hyperlegible', sans-serif;
+		@apply font-atkinson;
 	}
 
 	.gradientText {

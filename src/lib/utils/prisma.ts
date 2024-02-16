@@ -21,3 +21,7 @@ export const updateComment = async (id: string, content: string): Promise<Commen
 		data: { content: content },
 	});
 };
+
+export const deleteComment = async (id: string): Promise<Comment> => {
+	return await prisma.comment.delete({ where: { id: id } });
+};
