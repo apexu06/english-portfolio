@@ -3,6 +3,10 @@
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
 	import { fade } from 'svelte/transition';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectSpeedInsights();
+
 	export let data;
 </script>
 
