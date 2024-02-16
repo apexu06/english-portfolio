@@ -10,7 +10,14 @@
 	let updatedContent = comment.content;
 
 	function formatDate(date: Date) {
-		return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
+		let minutes =
+			date.getMinutes().toString().length === 1 ? `0${date.getMinutes()}` : date.getMinutes();
+		let hours = date.getHours().toString().length === 1 ? `0${date.getHours()}` : date.getHours();
+		let months =
+			date.getMonth().toString().length === 1 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
+		let days = date.getDate().toString().length === 1 ? `0${date.getDate()}` : date.getDate();
+
+		return `${days}/${months}/${date.getFullYear()} ${hours}:${minutes}`;
 	}
 
 	async function deleteComment(id: string) {

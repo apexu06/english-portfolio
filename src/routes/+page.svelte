@@ -18,7 +18,7 @@
 			<div class="flex flex-col items-center gap-4 sm:items-start">
 				<h1
 					transition:fly={{ y: -300 }}
-					class="gradientText h-[58px] text-5xl sm:h-[90px] sm:text-[80px]"
+					class="gradientText h-[58px] text-5xl sm:h-[90px] sm:w-[600px] sm:text-[80px]"
 				>
 					My Portfolio
 				</h1>
