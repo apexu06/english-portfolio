@@ -21,12 +21,13 @@
 	<div class="not-prose text-foreground">
 		<h1>{data.title}</h1>
 		<p>{data.date}</p>
+		<div class="mb-8 h-[2px] w-full rounded-full bg-gray-500"></div>
 	</div>
 	<svelte:component this={data.content} />
 </article>
 
 <div class="mt-16 flex w-full flex-col items-center gap-4 sm:w-[50rem]">
-	<h3>Comments</h3>
+	<h2>Comments</h2>
 	{#if comments.length > 0}
 		{#each comments as comment (comment.id)}
 			<div animate:flip={{ duration: 200 }} class="w-full">

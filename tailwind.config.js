@@ -4,7 +4,7 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
-			playfair: ['"Playfair Display"', 'serif'],
+			playfair: ['"Playfair Display Variable"', 'serif'],
 			atkinson: ['"Atkinson Hyperlegible"', 'serif'],
 		},
 		extend: {

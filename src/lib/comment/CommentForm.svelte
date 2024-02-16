@@ -30,7 +30,7 @@
 				name="content"
 				minlength="1"
 			/>
-			<div class="flex w-1/3 gap-2 self-end">
+			<div class="flex w-2/3 gap-2 self-end sm:w-1/3">
 				<div
 					role="none"
 					on:click={() => (formOpen = false)}

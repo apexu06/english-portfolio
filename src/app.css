@@ -23,6 +23,10 @@
 		@apply text-xl;
 	}
 
+	button {
+		@apply text-lg;
+	}
+
 	:root {
 		--accent: #8c5cf5;
 		--background: #f9fafc;
