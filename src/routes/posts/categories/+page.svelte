@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import CategorySortButtons from '$lib/CategorySortButtons.svelte';
+	import CategorySortButtons from '$lib/components/buttons/CategorySortButtons.svelte';
 	import { pageInfo } from '$lib/stores/localStorageStore';
 	import { onMount } from 'svelte';
 	import { flip } from 'svelte/animate';

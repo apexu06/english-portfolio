@@ -2,6 +2,7 @@
 	import { invalidateAll } from '$app/navigation';
 	import type { Comment } from '@prisma/client';
 	import { Edit, Trash } from 'lucide-svelte';
+	import Button from '../buttons/Button.svelte';
 
 	export let comment: Comment;
 
@@ -64,22 +65,16 @@
 				bind:value={updatedContent}
 			></textarea>
 			<div class="flex gap-2 self-end">
-				<button
-					class="rounded-md border-2 border-foreground p-2 text-base text-foreground shadow-default transition hover:bg-foreground hover:text-lightBackground hover:shadow-heavy"
+				<Button variant="cancel" class="px-2" on:click={() => (editing = false)}>Cancel</Button>
+				<Button
+					variant="confirm"
+					class="px-2"
 					on:click={async () => {
 						await updateComment(comment.id, updatedContent);
 						await invalidateAll();
 						editing = false;
-					}}
+					}}>Save</Button
 				>
-					<b>Save</b>
-				</button>
-				<button
-					class="rounded-md p-2 text-foreground hover:underline"
-					on:click={() => (editing = false)}
-				>
-					<b>Cancel</b>
-				</button>
 			</div>
 		</div>
 	{/if}
@@ -92,14 +87,15 @@
 	<div class="flex max-w-full flex-col gap-4">
 		<p>Are you sure you want to delete this comment?</p>
 		<div class="flex w-full items-center justify-between">
-			<button class="p-2 hover:underline" on:click={() => deleteDialog.close()}>Cancel</button>
-			<button
-				class="rounded-md bg-red-500 p-2 text-white shadow-default transition hover:shadow-heavy"
+			<Button variant="cancel" on:click={() => deleteDialog.close()} class="px-2">Cancel</Button>
+			<Button
+				variant="confirm"
 				on:click={async () => {
 					await deleteComment(comment.id);
 					await invalidateAll();
 					deleteDialog.close();
-				}}><b>Delete</b></button
+				}}
+				class="px-2">Delete</Button
 			>
 		</div>
 	</div>

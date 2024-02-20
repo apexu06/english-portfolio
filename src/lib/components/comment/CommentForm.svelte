@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Minus, Plus } from 'lucide-svelte';
+	import Button from '$lib/components/buttons/Button.svelte';
 	import { fly } from 'svelte/transition';
 
 	let formOpen = false;
@@ -29,21 +30,17 @@
 				placeholder="your text goes here"
 				name="content"
 				minlength="1"
+				required
 			/>
 			<div class="flex w-2/3 gap-2 self-end sm:w-1/3">
-				<div
-					role="none"
-					on:click={() => (formOpen = false)}
-					class="flex h-10 w-full items-center justify-center rounded-md bg-lightBackground shadow transition hover:cursor-pointer hover:shadow-default"
+				<Button
+					type="button"
+					variant="cancel"
+					class="w-full"
+					on:click={() => (formOpen = !formOpen)}>Cancel</Button
 				>
-					Cancel
-				</div>
 
-				<button
-					type="submit"
-					class="h-10 w-full rounded-md bg-foreground text-lightBackground shadow transition hover:shadow-default"
-					>Submit</button
-				>
+				<Button variant="confirm" class="w-full">Submit</Button>
 			</div>
 		</form>
 	{/if}

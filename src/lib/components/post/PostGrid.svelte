@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PostItem from '$lib/post/PostItem.svelte';
+	import PostItem from '$lib/components/post/PostItem.svelte';
 	import type { Post } from '$lib/types/post';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';

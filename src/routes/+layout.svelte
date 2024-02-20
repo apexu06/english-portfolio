@@ -1,5 +1,5 @@
 <script>
-	import NavBar from '$lib/navbar/NavBar.svelte';
+	import NavBar from '$lib/components/navbar/NavBar.svelte';
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
 	import { fade } from 'svelte/transition';

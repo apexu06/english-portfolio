@@ -1,6 +1,6 @@
 <script lang="ts">
-	import CommentForm from '$lib/comment/CommentForm.svelte';
-	import CommentItem from '$lib/comment/CommentItem.svelte';
+	import CommentForm from '$lib/components/comment/CommentForm.svelte';
+	import CommentItem from '$lib/components/comment/CommentItem.svelte';
 	import type { Comment } from '@prisma/client';
 	import { flip } from 'svelte/animate';
 

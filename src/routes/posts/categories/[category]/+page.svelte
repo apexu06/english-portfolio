@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PostGrid from '$lib/post/PostGrid.svelte';
+	import PostGrid from '$lib/components/post/PostGrid.svelte';
 
 	export let data;
 </script>

@@ -1,5 +1,5 @@
 <script>
-	import { pageInfo } from './stores/localStorageStore';
+	import { pageInfo } from '$lib/stores/localStorageStore';
 </script>
 
 <div class="flex h-10 w-48 gap-1 rounded-md bg-lightBackground p-1 shadow md:w-64">
