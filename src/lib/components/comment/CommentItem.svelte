@@ -3,6 +3,7 @@
 	import type { Comment } from '@prisma/client';
 	import { Edit, Trash } from 'lucide-svelte';
 	import Button from '../buttons/Button.svelte';
+	import autosize from 'autosize';
 
 	export let comment: Comment;
 
@@ -34,10 +35,13 @@
 	}
 
 	let deleteDialog: HTMLDialogElement;
+	let editCommentInput: HTMLTextAreaElement;
 	let editing = false;
+
+	$: editCommentInput, autosize(editCommentInput);
 </script>
 
-<div class="flex h-fit w-full flex-col rounded-md bg-lightBackground p-2 shadow-default">
+<div class="flex h-fit w-full flex-col rounded-md bg-lightBackground p-3 shadow-default">
 	{#if !editing}
 		<div class="flex items-center justify-between gap-2">
 			<div>
@@ -61,9 +65,11 @@
 	{:else}
 		<div class="flex flex-col gap-2">
 			<textarea
-				class="h-32 w-full rounded-md bg-lightBackground p-2 outline-none"
+				class="min-h-fit w-full rounded-md bg-lightBackground outline-none"
 				bind:value={updatedContent}
+				bind:this={editCommentInput}
 			></textarea>
+			<div class="mb-2 mt-1 h-[1px] w-full self-center rounded-full bg-gray-500"></div>
 			<div class="flex gap-2 self-end">
 				<Button variant="cancel" class="px-2" on:click={() => (editing = false)}>Cancel</Button>
 				<Button
@@ -82,7 +88,7 @@
 
 <dialog
 	bind:this={deleteDialog}
-	class="rounded-md bg-lightBackground p-8 shadow-heavy backdrop:bg-black backdrop:opacity-60"
+	class="rounded-md bg-lightBackground px-4 py-6 backdrop:bg-black backdrop:opacity-60"
 >
 	<div class="flex max-w-full flex-col gap-4">
 		<p>Are you sure you want to delete this comment?</p>

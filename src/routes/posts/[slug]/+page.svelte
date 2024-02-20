@@ -9,6 +9,7 @@
 
 	$: data,
 		(() => {
+			if (!data.comments) return;
 			comments = data.comments.sort((a, b) => {
 				let aDate = new Date(a.createdAt);
 				let bDate = new Date(b.createdAt);

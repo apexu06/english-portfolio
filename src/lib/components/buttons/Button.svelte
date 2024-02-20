@@ -5,8 +5,13 @@
 <button
 	{...$$restProps}
 	on:click
-	class={`${$$restProps.class ?? ''} ${variant === 'confirm' ? 'bg-foreground text-background' : 'bg-lightBackground text-foreground'} h-10 rounded-md shadow transition hover:shadow-default`}
-	><slot /></button
+	class={`${$$restProps.class ?? ''} 
+			${
+				variant === 'confirm'
+					? 'bg-foreground text-background shadow hover:shadow-default'
+					: 'bg-transparent text-foreground hover:underline'
+			} 
+		  h-10 rounded-md transition`}><slot /></button
 >
 
 <style>

@@ -2,17 +2,22 @@
 	import { Minus, Plus } from 'lucide-svelte';
 	import Button from '$lib/components/buttons/Button.svelte';
 	import { fly } from 'svelte/transition';
+	import autosize from 'autosize';
 
 	let formOpen = false;
+
+	let commentInput: HTMLTextAreaElement;
+
+	$: commentInput, autosize(commentInput);
 </script>
 
-<div class="mb-[300px] flex w-full flex-col items-center justify-center gap-4">
+<div class="mb-[200px] flex w-full flex-col items-center justify-center gap-4">
 	<button
 		on:click={() => (formOpen = !formOpen)}
-		class={`flex h-10 w-full items-center justify-center rounded-md bg-lightBackground transition ${!formOpen ? 'shadow-default hover:translate-y-[-3px] hover:shadow-heavy' : 'shadow'} `}
+		class={`group flex h-10 w-full items-center justify-center rounded-md bg-lightBackground transition ${!formOpen ? 'shadow-default hover:shadow-heavy' : 'shadow'} `}
 	>
 		{#if !formOpen}
-			<Plus />
+			<Plus class="transition group-hover:scale-125" />
 		{:else}
 			<Minus />
 		{/if}
@@ -31,13 +36,13 @@
 				name="content"
 				minlength="1"
 				required
+				bind:this={commentInput}
 			/>
 			<div class="flex w-2/3 gap-2 self-end sm:w-1/3">
-				<Button
+				<button
 					type="button"
-					variant="cancel"
-					class="w-full"
-					on:click={() => (formOpen = !formOpen)}>Cancel</Button
+					class="h-10 w-full rounded-md bg-lightBackground shadow transition hover:shadow-default"
+					on:click={() => (formOpen = !formOpen)}>Cancel</button
 				>
 
 				<Button variant="confirm" class="w-full">Submit</Button>
