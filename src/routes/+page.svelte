@@ -41,15 +41,13 @@
 						goto('/posts/categories');
 					}}
 				>
-					<div class="hidden items-center transition sm:flex">
-						<ChevronRight class="mr-[-8px] transition delay-150 group-hover:translate-x-4"
-						></ChevronRight>
-						<ChevronRight class="mr-[-8px] transition delay-75 group-hover:translate-x-4"
-						></ChevronRight>
-						<ChevronRight class="delay mr-3 transition group-hover:translate-x-4"></ChevronRight>
+					<div class="items-center transition group-hover:translate-x-4 sm:flex">
+						<ChevronRight class="-mr-2 "></ChevronRight>
+						<ChevronRight class="-mr-2"></ChevronRight>
+						<ChevronRight class="mr-4"></ChevronRight>
 					</div>
 
-					<span class="text-3xl transition group-hover:translate-x-2">Get <b>Started</b></span>
+					<span class="text-3xl transition group-hover:scale-[102%]">Get <b>Started</b></span>
 				</button>
 			</div>
 		{/if}

@@ -39,7 +39,7 @@
 			{#each data.categories as category (category.name)}
 				<button
 					animate:flip={{ duration: 250 }}
-					on:click={() => goto('/posts/categories/' + category.name)}
+					on:click={() => goto('/posts/categories/' + encodeURIComponent(category.name))}
 					class="flex h-20 min-h-20 min-w-[98%] items-center justify-between bg-lightBackground px-8 capitalize shadow-default transition hover:bg-foreground hover:text-lightBackground"
 				>
 					<span>{category.name}</span>

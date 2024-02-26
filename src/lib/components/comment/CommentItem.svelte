@@ -68,6 +68,7 @@
 				class="min-h-fit w-full rounded-md bg-lightBackground outline-none"
 				bind:value={updatedContent}
 				bind:this={editCommentInput}
+				minlength="1"
 			></textarea>
 			<div class="mb-2 mt-1 h-[1px] w-full self-center rounded-full bg-gray-500"></div>
 			<div class="flex gap-2 self-end">
