@@ -42,7 +42,7 @@
 					on:click={() => goto('/posts/categories/' + encodeURIComponent(category.name))}
 					class="flex h-20 min-h-20 min-w-[98%] items-center justify-between bg-lightBackground px-8 capitalize shadow-default transition hover:bg-foreground hover:text-lightBackground"
 				>
-					<span>{category.name}</span>
+					<span class="truncate">{category.name}</span>
 					<span>{`${category.count} ${category.count === 1 ? 'Post' : 'Posts'}`}</span>
 				</button>
 			{/each}

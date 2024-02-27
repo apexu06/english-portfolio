@@ -41,7 +41,7 @@
 						goto('/posts/categories');
 					}}
 				>
-					<div class="items-center transition group-hover:translate-x-4 sm:flex">
+					<div class="hidden items-center transition group-hover:translate-x-4 sm:flex">
 						<ChevronRight class="-mr-2 "></ChevronRight>
 						<ChevronRight class="-mr-2"></ChevronRight>
 						<ChevronRight class="mr-4"></ChevronRight>
