@@ -16,7 +16,6 @@ export const fetchMarkDownPosts = async (category: string | null) => {
 					.split('/')
 					.pop()
 					?.substring(0, slug.length - 17);
-			console.log(path);
 			return {
 				metadata: metadata,
 				path,

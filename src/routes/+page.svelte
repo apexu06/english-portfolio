@@ -47,7 +47,7 @@
 						<ChevronRight class="mr-4"></ChevronRight>
 					</div>
 
-					<span class="text-3xl transition group-hover:scale-[102%]">Get <b>Started</b></span>
+					<span class="text-3xl transition">Get <b>Started</b></span>
 				</button>
 			</div>
 		{/if}

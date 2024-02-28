@@ -7,6 +7,6 @@ export const actions = {
 		const postName = request.url.split('/')[4].split('?')[0];
 		const content = data.get('content')?.toString() ?? '';
 
-		await createNewComment(content, postName);
+		//await createNewComment(content, postName);
 	},
 } satisfies Actions;
