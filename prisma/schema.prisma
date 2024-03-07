@@ -14,11 +14,13 @@ model Comment {
   content   String   @db.VarChar(255)
   postName  String   @db.VarChar(255)
   updatedAt DateTime @updatedAt
+  authorId  String
+
+  @@index([authorId])
 }
 
-model User {
-  id        Int      @id @default(autoincrement())
+model Author {
+  id        String   @id @default(uuid())
   createdAt DateTime @default(now())
   name      String   @db.VarChar(255)
-  key       String   @default(uuid())
 }

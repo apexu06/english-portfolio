@@ -6,6 +6,7 @@
   import type { Comment } from '@prisma/client';
   import { flip } from 'svelte/animate';
   import type { PageData, ActionData } from './$types';
+  import { slide } from 'svelte/transition';
 
   export let data: PageData;
   export let form: ActionData;
@@ -47,7 +48,7 @@
 </article>
 
 <div
-  class="mt-16 flex w-full flex-col items-center gap-4 pb-16 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]"
+  class="mt-16 flex min-h-[15rem] w-full flex-col items-center gap-4 pb-16 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]"
 >
   <h2>Comments</h2>
   {#if data.comments}
@@ -61,18 +62,28 @@
   {#if $authorLoggedIn}
     <CommentForm />
   {:else if loginInputOpen}
-    <div class="flex w-full flex-col gap-4">
-      <form action="?/login" method="POST">
-        <input placeholder="key" name="key" class="w-full rounded-md bg-lightBackground p-2" />
-        <div class="flex justify-between">
-          <Button on:click={() => (loginInputOpen = false)} variant="cancel" class="w-32"
-            >Cancel</Button
-          >
-          <Button variant="confirm" class="w-32" type="submit">Login</Button>
-        </div>
-      </form>
-    </div>
+    <form
+      action="?/login"
+      method="POST"
+      class="flex w-full flex-col gap-4"
+      transition:slide={{ duration: 200 }}
+    >
+      <input placeholder="key" name="key" class="w-full rounded-md bg-lightBackground p-2" />
+      <div class="flex justify-between">
+        <Button
+          on:click={() => (loginInputOpen = false)}
+          variant="cancel"
+          class="w-32"
+          type="button">Cancel</Button
+        >
+        <Button variant="confirm" class="w-32" type="submit">Login</Button>
+      </div>
+    </form>
   {:else}
     <Button on:click={() => (loginInputOpen = true)} variant="confirm" class="w-32">Login</Button>
+  {/if}
+
+  {#if form?.error}
+    <h4 class="text-red-500">Invalid Key! Try again</h4>
   {/if}
 </div>

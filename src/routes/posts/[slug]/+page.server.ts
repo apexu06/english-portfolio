@@ -1,7 +1,8 @@
 import { authorKey, authorLoggedIn } from '$lib/stores/localStorageStore';
 import { createNewComment, getAuthorByKey } from '$lib/utils/prisma';
-import { error, type Actions } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
 import { get } from 'svelte/store';
+import type { Actions } from './$types';
 
 export const actions = {
   post: async ({ request }) => {
@@ -23,7 +24,7 @@ export const actions = {
 
     const author = await getAuthorByKey(key);
     if (!author) {
-      error(401, 'Invalid key');
+      return { error: true, message: 'Invalid key' };
     }
 
     authorKey.set(author.id);
