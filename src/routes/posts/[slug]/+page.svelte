@@ -1,10 +1,15 @@
 <script lang="ts">
+  import Button from '$lib/components/buttons/Button.svelte';
   import CommentForm from '$lib/components/comment/CommentForm.svelte';
   import CommentItem from '$lib/components/comment/CommentItem.svelte';
+  import { authorLoggedIn } from '$lib/stores/localStorageStore';
   import type { Comment } from '@prisma/client';
   import { flip } from 'svelte/animate';
+  import type { PageData, ActionData } from './$types';
 
-  export let data;
+  export let data: PageData;
+  export let form: ActionData;
+
   let comments: Comment[] = [];
 
   $: data,
@@ -18,9 +23,9 @@
     })();
 
   let formattedCategories = data.categories ? data.categories.join(', ') : '';
-
   let article: HTMLDivElement;
   let wordcount = 0;
+  let loginInputOpen = false;
 
   $: {
     if (article) {
@@ -41,7 +46,9 @@
   </div>
 </article>
 
-<div class="mt-16 flex w-full flex-col items-center gap-4 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]">
+<div
+  class="mt-16 flex w-full flex-col items-center gap-4 pb-16 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]"
+>
   <h2>Comments</h2>
   {#if data.comments}
     {#each comments as comment (comment.id)}
@@ -50,5 +57,22 @@
       </div>
     {/each}
   {/if}
-  <CommentForm />
+
+  {#if $authorLoggedIn}
+    <CommentForm />
+  {:else if loginInputOpen}
+    <div class="flex w-full flex-col gap-4">
+      <form action="?/login" method="POST">
+        <input placeholder="key" name="key" class="w-full rounded-md bg-lightBackground p-2" />
+        <div class="flex justify-between">
+          <Button on:click={() => (loginInputOpen = false)} variant="cancel" class="w-32"
+            >Cancel</Button
+          >
+          <Button variant="confirm" class="w-32" type="submit">Login</Button>
+        </div>
+      </form>
+    </div>
+  {:else}
+    <Button on:click={() => (loginInputOpen = true)} variant="confirm" class="w-32">Login</Button>
+  {/if}
 </div>

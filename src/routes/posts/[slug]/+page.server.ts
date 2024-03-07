@@ -1,5 +1,7 @@
-import { createNewComment } from '$lib/utils/prisma';
-import type { Actions } from '@sveltejs/kit';
+import { authorKey, authorLoggedIn } from '$lib/stores/localStorageStore';
+import { createNewComment, getAuthorByKey } from '$lib/utils/prisma';
+import { error, type Actions } from '@sveltejs/kit';
+import { get } from 'svelte/store';
 
 export const actions = {
   post: async ({ request }) => {
@@ -7,6 +9,24 @@ export const actions = {
     const postName = request.url.split('/')[4].split('?')[0];
     const content = data.get('content')?.toString() ?? '';
 
-    await createNewComment(content, postName);
+    const author = get(authorKey);
+    if (!author) {
+      error(401, 'You must be logged in to comment');
+    }
+
+    await createNewComment(content, postName, author);
+  },
+
+  login: async ({ request }) => {
+    const data = await request.formData();
+    const key = data.get('key')?.toString() ?? '';
+
+    const author = await getAuthorByKey(key);
+    if (!author) {
+      error(401, 'Invalid key');
+    }
+
+    authorKey.set(author.id);
+    authorLoggedIn.set(true);
   },
 } satisfies Actions;
