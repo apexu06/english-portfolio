@@ -6,54 +6,54 @@
 @tailwind utilities;
 
 @layer base {
-	h1 {
-		@apply font-playfair text-6xl font-bold;
-	}
+  h1 {
+    @apply font-playfair text-6xl font-bold;
+  }
 
-	h2 {
-		@apply text-4xl font-bold;
-	}
+  h2 {
+    @apply text-4xl font-bold;
+  }
 
-	h3 {
-		@apply text-2xl font-bold;
-	}
+  h3 {
+    @apply text-2xl font-bold;
+  }
 
-	a,
-	span {
-		@apply text-xl;
-	}
+  a,
+  span {
+    @apply text-xl;
+  }
 
-	button {
-		@apply text-lg;
-	}
+  button {
+    @apply text-lg;
+  }
 
-	:root {
-		--accent: #8c5cf5;
-		--background: #f9fafc;
-		--lightBackground: #fff;
-		--foreground: #1c1b22;
-		--shadowColor: rgba(0, 0, 0, 0.1);
-	}
+  :root {
+    --accent: #8c5cf5;
+    --background: #f9fafc;
+    --lightBackground: #fff;
+    --foreground: #1c1b22;
+    --shadowColor: rgba(0, 0, 0, 0.1);
+  }
 
-	.dark {
-		--acct: #cf4eb5;
-		--background: #1c1b22;
-		--lightBackground: #282630;
-		--foreground: #f9fafc;
-		--shadowColor: rgba(0, 0, 0, 0.2);
-	}
+  .dark {
+    --accent: #cf4eb5;
+    --background: #1c1b22;
+    --lightBackground: #282630;
+    --foreground: #f9fafc;
+    --shadowColor: rgba(0, 0, 0, 0.2);
+  }
 
-	body {
-		@apply bg-background text-xl text-foreground;
-	}
+  body {
+    @apply bg-background text-xl text-foreground;
+  }
 
-	* {
-		@apply font-atkinson;
-	}
+  * {
+    @apply font-atkinson;
+  }
 
-	.gradientText {
-		background: linear-gradient(90deg, #8b5cf6, #ec4899);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+  .gradientText {
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

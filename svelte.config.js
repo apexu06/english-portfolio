@@ -4,16 +4,16 @@ import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [vitePreprocess(), mdsvex({ extensions: ['.md'], smartypants: true })],
-	extensions: ['.svelte', '.md'],
+  preprocess: [vitePreprocess(), mdsvex({ extensions: ['.md'], smartypants: true })],
+  extensions: ['.svelte', '.md'],
 
-	kit: {
-		adapter: adapter({}),
-		alias: {
-			$markdown: './src/markdown',
-		},
-		paths: {},
-	},
+  kit: {
+    adapter: adapter({}),
+    alias: {
+      $markdown: './src/markdown',
+    },
+    paths: {},
+  },
 };
 
 export default config;
