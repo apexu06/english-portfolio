@@ -2,7 +2,7 @@
   import Button from '$lib/components/buttons/Button.svelte';
   import CommentForm from '$lib/components/comment/CommentForm.svelte';
   import CommentItem from '$lib/components/comment/CommentItem.svelte';
-  import { authorLoggedIn } from '$lib/stores/localStorageStore';
+  import { authorKey, authorLoggedIn } from '$lib/stores/localStorageStore';
   import type { Comment } from '@prisma/client';
   import { flip } from 'svelte/animate';
   import type { PageData, ActionData } from './$types';
@@ -32,6 +32,11 @@
     if (article) {
       wordcount = article.innerText.split(' ').length;
     }
+  }
+
+  $: if (form?.success) {
+    $authorLoggedIn = true;
+    $authorKey = form.id;
   }
 </script>
 

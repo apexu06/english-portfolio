@@ -1,4 +1,4 @@
-import { authorKey, authorLoggedIn } from '$lib/stores/localStorageStore';
+import { authorKey } from '$lib/stores/localStorageStore';
 import { createNewComment, getAuthorByKey } from '$lib/utils/prisma';
 import { error } from '@sveltejs/kit';
 import { get } from 'svelte/store';
@@ -27,7 +27,6 @@ export const actions = {
       return { error: true, message: 'Invalid key' };
     }
 
-    authorKey.set(author.id);
-    authorLoggedIn.set(true);
+    return { success: true, id: author.id };
   },
 } satisfies Actions;
