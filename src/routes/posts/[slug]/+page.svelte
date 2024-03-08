@@ -40,6 +40,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>{data.title}</title>
+</svelte:head>
+
 <article class="prose prose-xl prose-neutral w-full dark:prose-invert">
   <div class="not-prose text-foreground">
     <h1>{data.title}</h1>
