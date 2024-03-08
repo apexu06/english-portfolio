@@ -9,7 +9,7 @@
 			${
         variant === 'confirm'
           ? 'bg-foreground text-background shadow hover:shadow-default'
-          : 'bg-transparent text-foreground hover:underline'
+          : 'border-gay-500 border border-gray-400 text-foreground hover:underline'
       } 
 		  h-10 rounded-md transition`}><slot /></button
 >
