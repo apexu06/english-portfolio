@@ -11,10 +11,10 @@
   $: commentInput, autosize(commentInput);
 </script>
 
-<div class="mb-[200px] flex w-full flex-col items-center justify-center gap-4">
+<div class="flex w-full flex-col items-center justify-center gap-4">
   <button
     on:click={() => (formOpen = !formOpen)}
-    class={`group flex h-10 w-full items-center justify-center rounded-md bg-lightBackground transition ${!formOpen ? 'shadow-default hover:shadow-heavy' : 'shadow'} `}
+    class={`group  flex h-10 w-full items-center justify-center rounded-md bg-lightBackground transition ${!formOpen ? 'mb-[350px] shadow-default hover:shadow-heavy' : 'shadow'} `}
   >
     {#if !formOpen}
       <Plus class="transition group-hover:scale-125" />
@@ -27,7 +27,7 @@
     <form
       method="POST"
       action="?/post"
-      class="flex w-full flex-col items-center justify-center gap-4"
+      class="mb-[150px] flex w-full flex-col items-center justify-center gap-4"
       transition:fly={{ y: 100, duration: 300 }}
     >
       <textarea
