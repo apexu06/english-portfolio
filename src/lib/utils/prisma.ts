@@ -3,7 +3,10 @@ import { PrismaClient, type Comment, type Author } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export const getCommentsFromPost = async (postName: string): Promise<Comment[]> => {
-  return await prisma.comment.findMany({ where: { postName: postName } });
+  return await prisma.comment.findMany({
+    where: { postName: postName },
+    orderBy: { createdAt: 'desc' },
+  });
 };
 
 export const createNewComment = async (

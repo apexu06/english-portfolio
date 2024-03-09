@@ -10,18 +10,6 @@
   export let data: PageData;
   export let form: ActionData;
 
-  let comments: Comment[] = [];
-
-  $: data,
-    (() => {
-      if (!data.comments) return;
-      comments = data.comments.sort((a, b) => {
-        let aDate = new Date(a.createdAt);
-        let bDate = new Date(b.createdAt);
-        return aDate > bDate ? -1 : 1;
-      });
-    })();
-
   let formattedCategories = data.categories ? data.categories.join(', ') : '';
   let article: HTMLDivElement;
   let wordcount = 0;
@@ -53,9 +41,9 @@
 <div
   class="mt-16 flex min-h-[20rem] w-full flex-col items-center gap-4 pb-16 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]"
 >
-  <h2>Comments</h2>
+  <h2>Feedback</h2>
   {#if data.comments}
-    {#each comments as comment (comment.id)}
+    {#each data.comments as comment (comment.id)}
       <div animate:flip={{ duration: 200 }} class="w-full">
         <CommentItem {comment} authorId={data?.authorId} />
       </div>
