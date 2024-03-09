@@ -2,11 +2,10 @@
   import Button from '$lib/components/buttons/Button.svelte';
   import CommentForm from '$lib/components/comment/CommentForm.svelte';
   import CommentItem from '$lib/components/comment/CommentItem.svelte';
-  import { authorKey, authorLoggedIn } from '$lib/stores/localStorageStore';
   import type { Comment } from '@prisma/client';
   import { flip } from 'svelte/animate';
   import type { PageData, ActionData } from './$types';
-  import { fade, fly } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
 
   export let data: PageData;
   export let form: ActionData;
@@ -33,11 +32,6 @@
       wordcount = article.innerText.split(' ').length;
     }
   }
-
-  $: if (form?.success) {
-    $authorLoggedIn = true;
-    $authorKey = form.id;
-  }
 </script>
 
 <svelte:head>
@@ -63,21 +57,25 @@
   {#if data.comments}
     {#each comments as comment (comment.id)}
       <div animate:flip={{ duration: 200 }} class="w-full">
-        <CommentItem {comment} />
+        <CommentItem {comment} authorId={data?.authorId} />
       </div>
     {/each}
   {/if}
 
-  {#if $authorLoggedIn}
+  {#if data.authorId}
     <CommentForm />
   {:else if loginInputOpen}
     <form
       action="?/login"
       method="POST"
-      class="flex w-full flex-col gap-4"
+      class="flex min-h-[150px] w-full flex-col gap-4"
       in:fly={{ y: 50, duration: 200 }}
     >
-      <input placeholder="key" name="key" class="w-full rounded-md bg-lightBackground p-2" />
+      <input
+        placeholder="your key goes here"
+        name="key"
+        class="w-full rounded-md bg-lightBackground p-2"
+      />
       <div class="flex justify-between">
         <Button
           on:click={() => (loginInputOpen = false)}
@@ -89,7 +87,11 @@
       </div>
     </form>
   {:else}
-    <Button on:click={() => (loginInputOpen = true)} variant="confirm" class="w-32">Login</Button>
+    <div class="min-h-[150px]">
+      <Button on:click={() => (loginInputOpen = true)} variant="confirm" class="min-h-[40px] w-32"
+        >Login</Button
+      >
+    </div>
   {/if}
 
   {#if form?.error}

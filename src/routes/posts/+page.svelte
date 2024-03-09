@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
   import PostGrid from '$lib/components/post/PostGrid.svelte';
+  import type { PageData } from './$types';
 
-  export let data;
+  export let data: PageData;
 </script>
 
 <svelte:head>

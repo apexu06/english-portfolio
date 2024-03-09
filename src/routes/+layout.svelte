@@ -1,13 +1,13 @@
-<script>
+<script lang="ts">
   import NavBar from '$lib/components/navbar/NavBar.svelte';
   import '../app.css';
   import { ModeWatcher } from 'mode-watcher';
   import { fade } from 'svelte/transition';
   import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+  import type { PageData } from './$types';
 
   injectSpeedInsights();
-
-  export let data;
+  export let data: PageData;
 </script>
 
 <ModeWatcher />

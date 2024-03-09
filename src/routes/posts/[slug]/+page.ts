@@ -1,7 +1,7 @@
 import type { Comment } from '@prisma/client';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ params, fetch }) => {
+export const load: PageLoad = async ({ params, fetch, data }) => {
   const post = await import(`../../../markdown/${params.slug}.md`);
   const { title, date, description, categories } = post.metadata;
 
@@ -17,5 +17,6 @@ export const load: PageLoad = async ({ params, fetch }) => {
     categories,
     description,
     comments,
+    authorId: data.authorId,
   };
 };

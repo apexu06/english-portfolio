@@ -5,8 +5,9 @@
   import { onMount } from 'svelte';
   import { flip } from 'svelte/animate';
   import { fly } from 'svelte/transition';
+  import type { PageData } from './$types';
 
-  export let data;
+  export let data: PageData;
   $: $pageInfo.categorySortOrder,
     (() => {
       if ($pageInfo.categorySortOrder === 'count' && data.categories) {

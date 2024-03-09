@@ -5,9 +5,9 @@
   import Button from '../buttons/Button.svelte';
   import autosize from 'autosize';
   import { onMount } from 'svelte';
-  import { authorKey } from '$lib/stores/localStorageStore';
 
   export let comment: Comment;
+  export let authorId: string | undefined;
 
   let createdAt = new Date(comment.createdAt);
   let updatedAt = new Date(comment.updatedAt);
@@ -44,7 +44,7 @@
 
   let isOwnPost = false;
   onMount(() => {
-    isOwnPost = comment.authorId === $authorKey;
+    isOwnPost = comment.authorId === authorId;
   });
 </script>
 
