@@ -32,6 +32,6 @@ export const actions = {
     if (!author) {
       return { error: true, message: 'Invalid key' };
     }
-    cookies.set('author', author.id, { path: '' });
+    cookies.set('author', author.id, { path: '/' });
   },
 } satisfies Actions;
