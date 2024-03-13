@@ -13,7 +13,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
 export const actions = {
   post: async ({ request, cookies }) => {
     const data = await request.formData();
-    const postName = request.url.split('/')[4].split('?')[0];
+    const postName = request.url.split('/')[4]?.split('?')[0] ?? '';
     const content = data.get('content')?.toString() ?? '';
 
     const author = cookies.get('author');
@@ -25,13 +25,17 @@ export const actions = {
   },
 
   login: async ({ request, cookies }) => {
-    const data = await request.formData();
-    const key = data.get('key')?.toString() ?? '';
+    try {
+      const data = await request.formData();
+      const key = data.get('key')?.toString() ?? '';
 
-    const author = await getAuthorByKey(key);
-    if (!author) {
-      return { error: true, message: 'Invalid key' };
+      const author = await getAuthorByKey(key);
+      if (!author) {
+        return { error: true, message: 'Invalid key' };
+      }
+      cookies.set('author', author.id, { path: '/' });
+    } catch (_err) {
+      return { error: true, message: 'Failed load commments' };
     }
-    cookies.set('author', author.id, { path: '/' });
   },
 } satisfies Actions;

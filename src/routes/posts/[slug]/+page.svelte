@@ -2,10 +2,10 @@
   import Button from '$lib/components/buttons/Button.svelte';
   import CommentForm from '$lib/components/comment/CommentForm.svelte';
   import CommentItem from '$lib/components/comment/CommentItem.svelte';
-  import type { Comment } from '@prisma/client';
   import { flip } from 'svelte/animate';
   import type { PageData, ActionData } from './$types';
   import { fly } from 'svelte/transition';
+  import { onMount } from 'svelte';
 
   export let data: PageData;
   export let form: ActionData;
@@ -20,6 +20,17 @@
       wordcount = article.innerText.split(' ').length;
     }
   }
+
+  function saveScrollPosition() {
+    localStorage.setItem('scrollPosition', window.scrollY.toString());
+  }
+
+  onMount(() => {
+    window.scrollTo({
+      top: parseInt(localStorage.getItem('scrollPosition') || '0'),
+      behavior: 'smooth',
+    });
+  });
 </script>
 
 <svelte:head>
@@ -71,7 +82,9 @@
           class="w-32"
           type="button">Cancel</Button
         >
-        <Button variant="confirm" class="w-32" type="submit">Login</Button>
+        <Button variant="confirm" class="w-32" type="submit" on:click={saveScrollPosition}
+          >Login</Button
+        >
       </div>
     </form>
   {:else}
@@ -80,9 +93,9 @@
         >Login</Button
       >
     </div>
-  {/if}
 
-  {#if form?.error}
-    <h4 class="text-red-500">Invalid Key! Try again</h4>
+    {#if form?.error}
+      <h4 class="-mt-28 text-red-500">{form?.message}</h4>
+    {/if}
   {/if}
 </div>
