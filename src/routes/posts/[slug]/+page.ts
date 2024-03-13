@@ -18,5 +18,5 @@ export const load: PageLoad = async ({ params, fetch, data }) => {
     description,
     comments,
     authorId: data.authorId,
-  };
+  } as { title: string; date: string; categories: string[]; description: string };
 };
