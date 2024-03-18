@@ -17,7 +17,7 @@
 
   $: {
     if (article) {
-      wordcount = article.innerText.split(' ').length;
+      wordcount = article.innerText.split(' ').length + 1;
     }
   }
 

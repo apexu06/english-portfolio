@@ -14,11 +14,13 @@
 
 {#if loaded}
   <div
-    class="flex min-h-[150px] w-full flex-col rounded-lg bg-lightBackground p-4 shadow-default transition hover:translate-y-[-5px] hover:shadow-heavy"
+    class="flex min-h-[150px] w-full flex-col justify-between rounded-lg bg-lightBackground p-4 shadow-default transition hover:translate-y-[-5px] hover:shadow-heavy"
     transition:fly={{ y: 100, duration: 200, delay: transitionDelay }}
   >
-    <h3 class="truncate font-normal">{post.metadata.title}</h3>
-    <span class="mt-2 line-clamp-3 text-[18px] text-gray-500">{post.metadata.description}</span>
+    <div>
+      <h3 class="truncate font-normal">{post.metadata.title}</h3>
+      <span class="mt-2 line-clamp-3 text-[18px] text-gray-500">{post.metadata.description}</span>
+    </div>
     <div class="mt-4 flex items-center justify-between">
       <a href={post.path} class="text-[18px] font-bold text-foreground hover:underline">
         Read more
