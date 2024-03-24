@@ -8,8 +8,8 @@ description: 'Your adventure starts here.'
 You find yourself wrapped in a thick fog. You can't see much around you, but you can make out a
 faint light in the distance. As you approach it, it starts to glow stronger and stronger.
 After a few steps, you stand in front of the once small light, now almost filling out your entire 
-field of vision. Taking another step forward, you feel yourself get pulled into the light, by some 
-seemingly invisible force. You close your eyes and brace yourself for what's to come.
+field of vision. Taking another step forward, you feel yourself getting pulled into the light, by 
+some seemingly invisible force. You close your eyes and brace yourself for what's to come.
 
 After you open your eyes again, you find yourself in complete darkness, however a seemingly
 omnipresent voice asks you: "Who do you wish to be?" "That's such a hard question, there are far too
