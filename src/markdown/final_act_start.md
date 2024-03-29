@@ -16,9 +16,7 @@ omnipresent voice asks you: "Who do you wish to be?" "That's such a hard questio
 many options!" you think to yourself. Suddenly however, it's made to clear to you that you have 
 three choices:
 - [Be a Warrior](final_act_warrior_start) 
-- [Be a Ranger](final_act_ranger_start) 
 - [Be a Mage](final_act_mage_start) 
 
 Which one will it be? 
 
-(Click on the class you want to choose.)

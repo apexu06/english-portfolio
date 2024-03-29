@@ -1,5 +1,5 @@
 ---
-title: 'Warriors start'
+title: 'The start of the warrior'
 date: '24.03.2024'
 categories: ['Final Act']
 description: 'The beginning of the warrior path.'

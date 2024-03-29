@@ -22,7 +22,7 @@ you ride, the funnier the situation seems to you. You let out a little laugh, bu
 others to hear you through the wind. "What's so funny?" one of them asks. "Just thinking about how
 easy this is going to be." you answer, in a very drunk state. "Haha! You are truly ready for 
 battle!" he laughs back. With your confidence boosted by your friend's words, you ride on, now close
-to the stalkers location. You almost fall off your horse as you try to dismount, but manage to stay
+to the stalkers' location. You almost fall off your horse as you try to dismount, but manage to stay
 on your feet. While the others have already started to cautiously approach the area, you struggle to
 draw your sword. After a few tries, you manage to get it out of its sheath and follow your friends.
 
@@ -44,5 +44,6 @@ are in.
 
 Furthermore, what evil intent could a druid which took care of you possibly have?
 
-- [Drink the potion](final_act_drink_potion)
-- [Refuse the potion](final_act_refuse_potion)
+- [Drink the potion](final_act_warrior_drink_potion)
+- [Refuse the potion](final_act_warrior_refuse_potion)
+

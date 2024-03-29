@@ -11,7 +11,7 @@ because I read a similar text in my childhood once where you had to make choices
 navigate a deep and dangerous jungle. I really liked it as it wasn't a story that was set in stone, 
 it was rather a story that you could influence and change yourself, a similar principle to what you
 would do in a video game. As I really like games or stories with fantasy settings, I set my own 
-little adventure in a fantasy world where you can either start as a warrior, ranger or mage. 
+little adventure in a fantasy world where you can either start as a warrior or mage.
 > In order to navigate and make choices, just click the wanted underlined choice at the end of each 
 text.
 
