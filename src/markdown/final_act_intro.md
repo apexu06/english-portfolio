@@ -16,3 +16,4 @@ little adventure in a fantasy world where you can either start as a warrior or m
 text.
 
 I hope you enjoy your personal adventure as much as I enjoyed creating it. 
+Also, special thanks to my friend June for proofreading.

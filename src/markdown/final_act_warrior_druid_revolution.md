@@ -15,10 +15,10 @@ because storming the kings castle head on is essentially suicide. But then final
 months, he reveals his grand plan to all of you. His plan is as follows:
 
 1. 10-20 Halflings should infiltrate the kings castle one day before the big attack
-2. once the druid gives his signal these start to eliminate as many knights as possible inside
-3. you and the other Halflings then begin to storm the castle (and the city beforehand) from all
+2. Once the druid gives his signal these start to eliminate as many knights as possible inside
+3. You and the other Halflings then begin to storm the castle (and the city beforehand) from all
    side, your goal is to overwhelm the outer defenses
-4. if all went well, the druid should be in control of the castle with you as his direct servant
+4. If all went well, the druid should be in control of the castle with you as his direct servant
 
 After another three days, the plan is set into action and 13 of your colleagues are set to
 infiltrate the kings castle. This seems to happen without major problems, as on the next day, the

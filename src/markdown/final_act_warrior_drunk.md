@@ -10,7 +10,7 @@ more, promptly ordering another one. The barkeeper looks at you with a smile, kn
 make good money off of you. He hands you the next mug, which takes you a bit longer to finish, as
 you cannot think straight anymore. The lights, people, music and chatter are too much for you in
 your current state. Just as you want to stand up, your colleague grabs your arm and asks: "Wanna go
-and hunt some beasts?" The people at the table look at you with a glow in their eyes telling you
+and hunt some beasts?", The people at the table look at you with a glow in their eyes telling you
 that they are expecting you to accept. 
 
 With the pressure of the group and your substantial alcohol level, the choice is not an easy one 

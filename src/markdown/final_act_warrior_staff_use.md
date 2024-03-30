@@ -14,7 +14,7 @@ Over the next few months, you study the books intensely, learning the basics of 
 control the power the staff holds. It's not easy, there are many minor accidents along the way. You
 almost set your hut on fire once but manage to extinguish it in time. You also decide to ignore the
 ways of the druids, as those don't align with your goals. The sole goal of yours is to become a very
-powerful wizard, one that can delete the druid from existence with the snap of a finger. 
+powerful wizard, one that can erase the druid from existence with the snap of a finger. 
 
 The more time passes, the closer you get to your goal, eventually mastering the staff and its powers. 
 You are now ready for your wizard adventures!

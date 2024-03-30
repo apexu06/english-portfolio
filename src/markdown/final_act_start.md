@@ -14,9 +14,8 @@ some seemingly invisible force. You close your eyes and brace yourself for what'
 After you open your eyes again, you find yourself in complete darkness, however a seemingly
 omnipresent voice asks you: "Who do you wish to be?" "That's such a hard question, there are far too
 many options!" you think to yourself. Suddenly however, it's made to clear to you that you have 
-three choices:
+two choices:
 - [Be a Warrior](final_act_warrior_start) 
 - [Be a Mage](final_act_mage_start) 
 
 Which one will it be? 
-

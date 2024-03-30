@@ -6,7 +6,7 @@ description: 'You chose to punch the druid, who tried to inject you.'
 ---
 
 You punch the druid right into his face, a clean right hook. He instantly goes down, the syringe 
-flying out of his hand. "What was that for?", you ask yourself as look at the unconscious druid on
+flying out of his hand. "What was that for?", you ask yourself as you look at the unconscious druid on
 the ground. Your fist hurts a bit, but you can't help but feel a bit proud of yourself. You inspect
 the druid more closely and find his staff. Druid staffs are known to be of great worth and power,
 only given to a small circle of individuals. "This is a once in a lifetime opportunity!", you think,

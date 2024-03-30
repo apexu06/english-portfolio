@@ -7,21 +7,21 @@ description: 'You chose to join the battle while being drunk.'
 
 You agree to join the battle. The others cheer, all ready for the upcoming fight. You slowly stand 
 up, the room spinning around you. Everyone grabs their respective weapons, with you almost managing 
-to drop your sword. "This won't end well..." you think to yourself. The door opens and you all step 
+to drop your sword. "This won't end well...", you think to yourself. The door opens and you all step 
 out and onto your horses. It's noon, the sun shining brightly and slightly blinding you. 
 Nevertheless, you find your old, trusty horse and promptly mount it without any trouble. "Maybe I'm 
 not that drunk." you mumble silently. Your companions don't seem to notice your battle with alcohol
 and instead focus on the upcoming fight. The enemy this time are _stalkers_, big, slender creatures
 that can turn invisible and have scythes instead of hands. Frightening creatures, really. You have
 fought and defeated stalkers before, but with a clear head. "I'll just trust my friends, they'll
-manage to keep me alive." you think as you start to ride towards the location where the stalkers
+manage to keep me alive.", you think as you start to ride towards the location where the stalkers
 were supposedly seen.
 
 It's a wonder that you manage to stay on your horse, albeit with some major difficulties. The longer
 you ride, the funnier the situation seems to you. You let out a little laugh, but is enough for the
-others to hear you through the wind. "What's so funny?" one of them asks. "Just thinking about how
-easy this is going to be." you answer, in a very drunk state. "Haha! You are truly ready for 
-battle!" he laughs back. With your confidence boosted by your friend's words, you ride on, now close
+others to hear you through the wind. "What's so funny?", one of them asks. "Just thinking about how
+easy this is going to be.", you answer, in a very drunk state. "Haha! You are truly ready for 
+battle!", he laughs back. With your confidence boosted by your friend's words, you ride on, now close
 to the stalkers' location. You almost fall off your horse as you try to dismount, but manage to stay
 on your feet. While the others have already started to cautiously approach the area, you struggle to
 draw your sword. After a few tries, you manage to get it out of its sheath and follow your friends.
