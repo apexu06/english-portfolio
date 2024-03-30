@@ -15,5 +15,6 @@ little adventure in a fantasy world where you can either start as a warrior or m
 > In order to navigate and make choices, just click the wanted underlined choice at the end of each 
 text.
 
-I hope you enjoy your personal adventure as much as I enjoyed creating it. 
-Also, special thanks to my friend June for proofreading.
+I hope you enjoy your personal adventure as much as I enjoyed creating it.
+
+_Also, special thanks to my friend June for proofreading._

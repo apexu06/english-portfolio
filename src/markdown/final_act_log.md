@@ -21,6 +21,11 @@ to one hour.
 ### 29.03.2024
 Today I finished a big portion of the warrior path. I finished the whole druid story, including all
 decisions and outcomes. There is also an AI generated image for every ending now, which adds a nice
-flair I think. I'm currently sitting at about ~2800 words, which is a lot more than I imagined, but
+flair I think. I'm currently sitting at about ~3800 words, which is a lot more than I imagined, but
 I'm not complaining. Some real progress was made today, I'm happy with it, even though it took me
 like 5 hours to write all of it.
+
+### 29.03.2024
+Finished up the drunk warrior branch today, the part where you stay in the tavern was the last 
+piece missing. It was a lot of fun to write, but it wasn't too much work. I wrote for about 40 
+minutes today, but its still good progress.

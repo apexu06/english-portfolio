@@ -27,7 +27,7 @@
       <b class="font-atkinson">{category}</b>
     </h1>
     {#each posts as post, i}
-      <PostItem transitionDelay={(i + 1) * 100 + 300} {post} />
+      <PostItem transitionDelay={(i + 1) * 100 + 200} {post} />
     {/each}
   </div>
 {/if}
