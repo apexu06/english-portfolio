@@ -8,9 +8,6 @@ dependencies:
   '@fontsource-variable/playfair-display':
     specifier: ^5.0.20
     version: 5.0.20
-  '@fontsource/atkinson-hyperlegible':
-    specifier: ^5.0.18
-    version: 5.0.18
   '@prisma/client':
     specifier: 5.9.1
     version: 5.9.1(prisma@5.9.1)
@@ -286,10 +283,6 @@ packages:
 
   /@fontsource-variable/playfair-display@5.0.20:
     resolution: {integrity: sha512-NhvSejdb9V6WzWk9LP+8EbwgK50DMEiP7rnvPHNBmY0bGhtKZTL4Zq6ev6t+IoNibkm6dFC9hIkessBJj+sqWA==}
-    dev: false
-
-  /@fontsource/atkinson-hyperlegible@5.0.18:
-    resolution: {integrity: sha512-94htZ6Q0UQVEEzbSy/IEmRuGH06Y4Qv+xZJHfCQrc2QCdcHxtdqw6tUXwLyCfiPqtI5oomsh2Un7Pnls4o4NRA==}
     dev: false
 
   /@isaacs/cliui@8.0.2:

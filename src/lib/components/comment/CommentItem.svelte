@@ -70,7 +70,7 @@
         {/if}
       </div>
     </div>
-    <p class="whitespace-pre-line break-words font-atkinson">{comment.content}</p>
+    <p class="font-geist whitespace-pre-line break-words">{comment.content}</p>
   {:else}
     <div class="flex flex-col gap-2">
       <textarea

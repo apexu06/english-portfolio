@@ -37,7 +37,6 @@
   "type": "module",
   "dependencies": {
     "@fontsource-variable/playfair-display": "^5.0.20",
-    "@fontsource/atkinson-hyperlegible": "^5.0.18",
     "@prisma/client": "5.9.1",
     "@vercel/speed-insights": "^1.0.10",
     "autosize": "^6.0.1",

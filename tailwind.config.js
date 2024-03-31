@@ -5,7 +5,7 @@ export default {
   theme: {
     fontFamily: {
       playfair: ['"Playfair Display Variable"', 'serif'],
-      atkinson: ['"Atkinson Hyperlegible"', 'serif'],
+      geist: ['"Geist"', 'serif'],
     },
     extend: {
       colors: {

@@ -1,11 +1,16 @@
 @import '@fontsource-variable/playfair-display';
-@import '@fontsource/atkinson-hyperlegible';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: 'Geist';
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/GeistVF.woff2') format('woff2');
+  }
   h1 {
     @apply font-playfair text-6xl font-bold;
   }
@@ -48,7 +53,7 @@
   }
 
   * {
-    @apply font-atkinson;
+    @apply font-geist;
   }
 
   .gradientText {

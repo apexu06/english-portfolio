@@ -29,7 +29,7 @@
     class="col-span-full mb-4 font-playfair font-normal"
     transition:fly={{ y: -100, duration: 200, delay: 200 }}
   >
-    <b class="font-atkinson">All Posts</b>
+    <b class="font-geist">All Posts</b>
   </h1>
 
   <div class="mb-8 flex items-center justify-between gap-2 sm:mb-4">

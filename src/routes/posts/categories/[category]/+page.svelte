@@ -31,7 +31,7 @@
     {#if data.category !== 'All Posts'}
       Category:
     {/if}
-    <b class="font-atkinson">{data.category}</b>
+    <b class="font-geist">{data.category}</b>
   </h1>
 
   <div class="mb-8 flex items-center justify-between gap-2 sm:mb-4">
