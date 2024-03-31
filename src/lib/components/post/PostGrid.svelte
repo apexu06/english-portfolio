@@ -11,17 +11,18 @@
     loaded = true;
   });
 
-  $: {
-    if (posts) {
-      if ($pageInfo.postSortOrder === 'date') {
-        posts.sort(
-          (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime(),
-        );
-      } else if ($pageInfo.postSortOrder === 'title') {
-        posts.sort((a, b) => a.metadata.title.localeCompare(b.metadata.title));
+  $: $pageInfo,
+    () => {
+      if (posts) {
+        if ($pageInfo.postSortOrder === 'date') {
+          posts = posts.sort(
+            (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime(),
+          );
+        } else if ($pageInfo.postSortOrder === 'title') {
+          posts = posts.sort((a, b) => a.metadata.title.localeCompare(b.metadata.title));
+        }
       }
-    }
-  }
+    };
 </script>
 
 {#if loaded}

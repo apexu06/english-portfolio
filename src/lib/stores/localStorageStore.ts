@@ -4,6 +4,6 @@ import { writable } from 'svelte/store';
 // TODO: actually use local storage
 export const pageInfo = writable({
   categorySortOrder: 'name',
-  postSortOrder: 'date',
+  postSortOrder: 'title',
   postView: 'grid',
 } as LocalStorageProps);
