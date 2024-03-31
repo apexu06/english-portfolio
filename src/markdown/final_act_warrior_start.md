@@ -17,4 +17,4 @@ Do you choose to accept the drink to keep on partying or do you refuse to prepar
 potential upcoming battle?
 
 - [Accept the drink](final_act_warrior_drunk)
-- [Refuse the drink](final_act_warrior_accept)
+- [Refuse the drink](final_act_warrior_sober_battle)

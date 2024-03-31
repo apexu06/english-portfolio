@@ -41,7 +41,7 @@
       </div>
       <input
         type="text"
-        class="w-full justify-self-center rounded-r-md p-1 outline-none"
+        class="w-full justify-self-center rounded-r-md bg-lightBackground p-1 outline-none"
         bind:value={search}
       />
     </div>
