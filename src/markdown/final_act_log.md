@@ -35,3 +35,8 @@ A lot of work was done today, finishing the complete warrior path, which I'm ver
 whole warrior path is now about 23 texts long, with 9 different endings and a total of about ~6700
 words. Very satisfied overall, but also quite tired, I worked for about 4–5 hours today. Tomorrow
 I'll start with the mage path, but I don't know if I'll make it as expansive as the warrior path.
+
+### 01.04.2024
+Drew the whole mage tree today, which is not as big as the warrior is, but it should still be a fun
+read. I didn't write any text today, but it still took me like 1-2 hours to think of a story and
+draw it in Excalidraw.
