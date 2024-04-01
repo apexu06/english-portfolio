@@ -18,3 +18,5 @@ text.
 I hope you enjoy your personal adventure as much as I enjoyed creating it.
 
 _Also, special thanks to my friend June for proofreading._
+
+[Click here to get started](final_act_start)
