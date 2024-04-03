@@ -17,5 +17,5 @@ getting banished into the seventh layer of hell.
 
 What will you do?
 
-- [Attend the meeting](final_act_mage_meeting.md)
-- [Go down the mountain](final_act_mage_descent.md)
+- [Attend the meeting](final_act_mage_meeting)
+- [Go down the mountain](final_act_mage_descent)

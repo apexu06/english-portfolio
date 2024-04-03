@@ -37,7 +37,7 @@
   <title>{data.title}</title>
 </svelte:head>
 
-<article class="prose prose-xl prose-neutral w-full dark:prose-invert">
+<article class="prose prose-lg prose-neutral w-full dark:prose-invert">
   <div class="not-prose text-foreground">
     <h1 class="font-normal">{data.title}</h1>
     <p class="mt-2 h-7 text-gray-500">{formattedCategories}</p>

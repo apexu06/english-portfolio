@@ -40,3 +40,8 @@ I'll start with the mage path, but I don't know if I'll make it as expansive as 
 Drew the whole mage tree today, which is not as big as the warrior is, but it should still be a fun
 read. I didn't write any text today, but it still took me like 1-2 hours to think of a story and
 draw it in Excalidraw.
+
+### 03.04.2024
+Made A LOT of progress today. I finished like 70% of the mage path, meaning that I wrote about 12
+texts today. Wrote for about 4 hours today, but I really like where I took the wizard storyline.
+Tomorrow I'll finish the rest of it, I guess I will have more than ~15000 words in total then.
