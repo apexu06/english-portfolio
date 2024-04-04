@@ -17,8 +17,8 @@
   </div>
   {#key data.currentRoute}
     <main
-      in:fade={{ duration: 100, delay: 150 }}
-      out:fade={{ duration: 100 }}
+      in:fade={{ duration: 200, delay: 220 }}
+      out:fade={{ duration: 200 }}
       class="flex h-[calc(100vh-5rem)] flex-col items-center px-4 py-16 sm:px-16"
     >
       <slot />
