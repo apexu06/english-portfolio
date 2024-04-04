@@ -18,7 +18,7 @@
 
 {#if loaded}
   <nav
-    class="flex h-full w-screen items-center justify-between bg-lightBackground px-8 text-foreground shadow-default"
+    class="flex h-full w-full items-center justify-between bg-lightBackground px-8 text-foreground shadow-default"
   >
     <button on:click={() => goto('/')} transition:fly={{ x: -200, duration: 400 }}>
       <h3>Home</h3>

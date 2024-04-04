@@ -11,7 +11,7 @@
 </script>
 
 <ModeWatcher />
-<div class="h-screen w-screen">
+<div class="h-screen w-full">
   <div class="h-20">
     <NavBar />
   </div>
