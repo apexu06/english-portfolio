@@ -1,3 +1,10 @@
+---
+title: 'Portfolio Introduction'
+date: '04.04.2024'
+categories: ['Comments']
+description: 'A short introduction to this site.'
+---
+
 # Introduction
 
 Welcome to my portfolio website. I put a lot of time, effort and (some) tears into this website, so
