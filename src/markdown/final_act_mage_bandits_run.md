@@ -7,7 +7,7 @@ description: 'You chose to run away from the bandits.'
 
 You decide to make a run for your life. While starting to sprint, you even silently cast a spell
 that makes you faster. The bandit seem a bit surprised about your speed, but they quickly start to
-catch on. While you are faster than normal humans, you are certainly not faster than a horse, which
+catch up. While you are faster than normal humans, you are certainly not faster than a horse, which
 all the bandits seem to be riding. You can hear them getting closer and closer, the sound of the
 galloping horses getting louder. Suddenly, you spot a thick embankment to your right, perfect for
 getting away from the horse riders. You make a sharp right turn and sprint like you never have

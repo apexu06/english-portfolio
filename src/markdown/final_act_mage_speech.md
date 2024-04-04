@@ -17,7 +17,7 @@ potential. This includes the mystical _Dark Arts_, which were thought to be lost
 goes through the crowd, some are excited, others are skeptical. Gandalf continues: "I know this is
 something ludicrous, but allow me to demonstrate." He lifts his staff and reveals that the top of
 the staff has seemingly fused with the Behelith, now glowing in a deep red light. "_Circumscribere
-lapsis_" he chants, and the the campfire suddenly changes its color to a deep violet. All of you
+lapsis_" he chants, and the campfire suddenly changes its color to a deep violet. All of you
 stare in awe at the spectacle. "I will now teach you all how to fuse your Beheliths with your 
 staffs. Just follow after me." You are not really sure what to think about all of this and if you
 want to learn the _Dark Arts_, but you cannot design that you are intrigued by the possibilities.

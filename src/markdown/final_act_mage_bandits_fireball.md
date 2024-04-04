@@ -11,7 +11,7 @@ tree you can work with. The bandits are about 40 meters away, rapidly approachin
 but then you spot it, the perfect tree, with the perfect angle. As you begin to throw the fireball,
 you mumble the words _Explodere insaniam_, which makes the fireball have much more explosive power 
 but also makes it harder to control. You take your time, aim your shot and finally throw the 
-fireball.  You hit the tree the just bandits just passed by. For a split second nothing happens, 
+fireball.  You hit the tree that the bandits just passed by. For a split second nothing happens, 
 but then the tree explodes in a thousand pieces, releasing millions of splinters, which impale the 
 bandits from behind. They all fall dead to the ground instantly.
 
@@ -21,7 +21,7 @@ your masters wise words. "When in doubt, trust the fireball." You chuckle to you
 you of the first time you cast a fireball, which almost burned down the entire magic school library.
 
 Nonetheless, you decide to study more pyromancy, as the fireball seems to have saved your life not
-once but twice in a short time period. From that day on, you became on with the fireball, using it
+once but twice in a short time period. From that day on, you became one with the fireball, using it
 for the rest of your life.
 
 ## Pyromancy Ending

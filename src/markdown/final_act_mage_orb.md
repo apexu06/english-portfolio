@@ -10,17 +10,17 @@ lean over it. You can feel the orb vibrating a little bit when you touch it. "St
 you inspect it closer. The surface is smooth and cold, yet the orb seems to be pulsating with 
 energy. This energy could also be the reason as to why you feel so drawn to it. You look around, but
 no one else seems to notice your escapades with the orb. The orb is surprisingly light, and you can
-easily lift it up, however it's a bit hard to hold as it's quite large. Weight and size don't really
+easily lift it up, however it's a bit hard to hold as it's quite large. Its weight and size don't really
 seem to make sense. While holding it in both hands, you can feel the energy flowing through you much
 faster than before. 
 
 Suddenly, both your hands simultaneously _sink_ into the orb, as if it was made out of water. You 
-try to get the more out, but your body only gets sucked in further. You want to scream for help once 
-you are shoulder deep in the orb, but it's too late. Your journey into the orb has begun.
+try to get them out, but your body only gets sucked in further. You want to scream for help, 
+but it's too late. Your journey into the orb has begun.
 
 As you open your eyes again, you find yourself in the middle of a battlefield. However, it's no
-battlefield you have ever seen before. The sky is a dark red, the ground is covered in dead bodies
-and around people are charging each other with short swords attached to some sort of wooden stick.
+battlefield you have ever seen before. The sky is a dark red, the ground is covered with dead bodies
+and around you people are charging each other with short swords attached to some sort of wooden stick.
 As you turn around, you see another ones wooden stick explode in a bright light, killing the person
 in front of him. They all scream words you don't understand, also everywhere you look you see people
 waving a flag, which consists of three vertical stripes, one blue, one white and one red, from left

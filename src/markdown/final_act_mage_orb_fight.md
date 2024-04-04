@@ -6,7 +6,7 @@ description: 'You chose to join the people that talk funny and fight with sticks
 ---
 
 You decide to join the fight, whatever the fight is about. As you watch your new "friends" charge
-into battle, you notice that their what you thought were wooden sticks are really some sort of mini
+into battle, you notice that what you thought were wooden sticks are really some sort of mini
 cannon. You are not sure how they work, but you are sure that you don't want to be on the receiving
 end of one. You saw a guillotine before in the distance, which is a bit more your style. Funnily
 enough, you just learned a spontaneous beheading spell last week, a really fun spell in your

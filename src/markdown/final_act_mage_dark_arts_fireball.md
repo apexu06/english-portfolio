@@ -11,11 +11,11 @@ fireball. However, just before the fireball hits the gas cloud, you send another
 towards the gas clouds which disperses it over the mages. The fireball closes and lands in the
 middle of the mages. Furthermore, the fireball ignites the gas cloud, creating an explosion of
 gigantic proportions. The whole cave is filled with a bright light from the explosion. Your ears are
-ringing and you can't see much. Once the light fades and your senses return to you, you see that
-your plan worked out perfectly. All mages, including the arch mage, are lying dead on the ground,
-their corpses still burning. You are in disbelief, that you survived.
+ringing, and you can't see much. Once the light fades and your senses return to you, you see that
+your plan worked out perfectly. All the mages, including the arch mage, are lying dead on the ground,
+their corpses still burning. You are in disbelief that you survived.
 
-Following these events, you decide its best to leave magic behind and start a new life. You become a
+Following these events, you decide it's best to leave magic behind and start a new life. You become a
 monk and live in a secluded monastery in the mountains for the rest of your days, however you often 
 think back to the events of the cave and the darkness that almost consumed you. You are glad that 
 you managed to overcome it and live a peaceful life.

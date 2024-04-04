@@ -16,7 +16,7 @@ you are quite new yourself.
 
 There is still some time until the arch mage, _Gandalf_, arrives. You suddenly spot a glowing orb in
 the corner of the room, which seems to be calling you in some way. It consumes your whole attention,
-you stare at it like idiot. You manage to shake yourself out of it, but you can't help but still
+you stare at it like an idiot. You manage to shake yourself out of it, but you can't help but still
 feel drawn to it. Now what will you do, prepare for the arch mage speech or go to the orb?
 
 - [Prepare for the arch mage speech](final_act_mage_speech)
