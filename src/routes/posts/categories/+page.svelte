@@ -26,7 +26,7 @@
 </svelte:head>
 
 {#if isLoaded}
-  <div class="flex h-full w-full flex-col items-center gap-4 md:w-2/3">
+  <div class="flex h-full w-full flex-grow flex-col items-center gap-4 md:w-2/3">
     <h1 transition:fly={{ y: -100, duration: 200, delay: 300 }} class="mb-5 font-normal">
       Categories
     </h1>
@@ -38,7 +38,7 @@
       <CategorySortButtons />
     </div>
     <div
-      class="flex h-3/4 w-full flex-col items-center gap-3 overflow-y-auto"
+      class="flex h-fit w-full flex-col items-center gap-3 overflow-y-auto overflow-x-clip"
       transition:fly={{ x: 200, duration: 200, delay: 500 }}
     >
       {#each data.categories as category (category.name)}
@@ -56,7 +56,8 @@
     <a
       transition:fly={{ y: 100, duration: 200, delay: 600 }}
       href={'/posts'}
-      class="text-gray-500 hover:text-foreground hover:underline">view all posts</a
+      class="text-gray-500 hover:text-foreground hover:underline sm:fixed sm:bottom-12"
+      >view all posts</a
     >
   </div>
 {/if}
