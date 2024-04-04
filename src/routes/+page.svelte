@@ -50,15 +50,16 @@
             <ChevronRight class="mr-4"></ChevronRight>
           </div>
 
-          <span class="text-3xl transition">Scroll <b>Down</b></span>
+          <span class="text-3xl transition">Click <b>Here</b></span>
         </button>
       </div>
     {/if}
   </div>
 </div>
-<div class="flex h-screen w-full flex-col items-center justify-center gap-8">
+<div class="flex h-fit min-h-full w-full flex-col items-center justify-center gap-16">
   <div class="prose prose-lg prose-neutral w-full dark:prose-invert">
     <svelte:component this={data.content} />
   </div>
-  <button class="text-xl" on:click={() => goto('/posts/categories')}>Get <b>Started</b></button>
+
+  <button class="text-3xl" on:click={() => goto('/posts/categories')}>Get <b>Started</b></button>
 </div>

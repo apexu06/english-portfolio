@@ -22,13 +22,13 @@ or Denmark, I noticed that most people, also the older ones, used credits cards 
 payment process everywhere I went much faster and simpler. But since I live in Austria and cash is still 
 king here, most people don't seem to be aware of the fact that credit cards exist. This has been an 
 annoyance of mine since I understood the basic principle of money, which I did when I was like five 
-or six years old. All the way back since then, I have always prepared cash when approaching the 
-checkout in basically any store and not paying with a credit card, as it just makes the life of the 
-cashier and everyone else easier. Furthermore, I also observed that the older the person searching 
-for their money is, the longer it takes, which kind of makes sense. However, this leads to more 
-problems as older people (I'm talking of pensioners here) are often in less of a hurry and take their 
-time, which is mostly no problem in of itself, but it still annoys the hell out of me when their behavior 
-affects other people that don't have as much time.
+or six years old. All the way back since then, I always prepared cash (if I didn't have a credit
+card) when approaching the checkout in basically any store and not paying with a credit card, as it 
+just makes the life of the cashier and everyone else easier. Furthermore, I also observed that the 
+older the person searching for their money is, the longer it takes, which kind of makes sense. 
+However, this leads to more problems as older people (I'm talking of pensioners here) are often in 
+less of a hurry and take their time, which is mostly no problem in of itself, but it still annoys 
+the hell out of me when their behavior affects other people that don't have as much time.
 
 It has to be noted that while I only complained about older people here, everyone from every age
 group can make this grave mistake and anger the whole queue. This however, does not invalidate the
