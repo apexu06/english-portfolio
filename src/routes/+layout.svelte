@@ -19,7 +19,7 @@
     <main
       in:fade={{ duration: 100, delay: 150 }}
       out:fade={{ duration: 100 }}
-      class="flex h-[calc(100vh-5rem)] flex-col items-center px-4 py-16 sm:px-16"
+      class="flex flex-col items-center px-4 py-16 sm:px-16"
     >
       <slot />
     </main>
