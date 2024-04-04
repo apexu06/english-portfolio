@@ -45,3 +45,13 @@ draw it in Excalidraw.
 Made A LOT of progress today. I finished like 70% of the mage path, meaning that I wrote about 12
 texts today. Wrote for about 4 hours today, but I really like where I took the wizard storyline.
 Tomorrow I'll finish the rest of it, I guess I will have more than ~15000 words in total then.
+
+### 04.04.2024
+I finished today, yaaay, just in time. The mage path is now complete, it isn't as complex as the
+warrior path overall, but I still like it. Final standings are:
+- Warrior path: ~6700 words
+- Mage path: ~5000 words
+- 42 texts in total
+
+It was a lot of work, but it's done and I'm proud of it. Wrote for about 3 hours today, to finish it
+off.
