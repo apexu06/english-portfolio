@@ -38,7 +38,7 @@
       <CategorySortButtons />
     </div>
     <div
-      class="flex h-fit w-full flex-col items-center gap-3 overflow-y-auto overflow-x-clip"
+      class="flex h-[70%] w-full flex-col items-center gap-3 overflow-y-auto overflow-x-clip"
       transition:fly={{ x: 200, duration: 200, delay: 500 }}
     >
       {#each data.categories as category (category.name)}
