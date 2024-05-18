@@ -5,7 +5,7 @@ categories: ['America Trip']
 description: 'The first full day in Washington DC'
 ---
 
-Last two days, were much more eventful than I expected them to be. We visited a lot of sights and
+The last two days were much more eventful than I expected them to be. We visited a lot of sights and
 saw many more or less interesting things. But let's not get ahead of ourselves and go through it
 relatively chronologically.
 
